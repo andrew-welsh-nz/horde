@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4cbb3dbf270b1744a9bf4fe1a34cc2aa
+timeCreated: 1504570747
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Mate SC
+  fontNames:
+  - Mate SC
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
