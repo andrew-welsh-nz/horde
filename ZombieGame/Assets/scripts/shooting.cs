@@ -52,6 +52,12 @@ public class shooting : MonoBehaviour {
     [SerializeField]
     GameObject ScreenFade;
 
+    [SerializeField]
+    float touchAreaBuffer;
+
+    public Vector3 direction;
+    public Vector3 hitPoint;
+
     //Assign BowRadial UI and Material
     public GameObject BowRadialDisplay;
     public Material BowDisplayMaterial;
@@ -69,6 +75,8 @@ public class shooting : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
+        Debug.Log(direction.magnitude);
 
         if (ArrowCount < 10)
         {
@@ -92,85 +100,92 @@ public class shooting : MonoBehaviour {
 
 		if(Input.GetMouseButtonDown(0) && ArrowCount > 0)
         {
-            Debug.Log("MouseDown");
-            isCharging = true;
-            HasSecondEffectPlayed = false;
-            anim.SetTrigger("Shoot");
-            arrowSounds.clip = chargeSound;
-            arrowSounds.loop = false;
-            arrowSounds.Play();
+            if(hitPoint.x >= this.transform.position.x - touchAreaBuffer && hitPoint.x <= this.transform.position.x + touchAreaBuffer && hitPoint.z >= this.transform.position.z - touchAreaBuffer && hitPoint.z <= this.transform.position.z + touchAreaBuffer)
+            {
+                Debug.Log("MouseDown");
+                isCharging = true;
+                //HasSecondEffectPlayed = false;
+                anim.SetTrigger("Shoot");
+                arrowSounds.clip = chargeSound;
+                arrowSounds.loop = false;
+                arrowSounds.Play();
+            }
         }
 
         if(Input.GetMouseButtonUp(0) && ArrowCount > 0)   
         {
-            Debug.Log("MouseUp");
-            // Reset charging states
-            isCharging = false;
-            timeCharging = 0.0f;
+            if(isCharging)
+            {
+                Debug.Log("MouseUp");
+                // Reset charging states
+                isCharging = false;
+                timeCharging = 0.0f;
 
-            //Turn off Emmiter
-            HeldChargeEffect.Stop();
-            HasSecondEffectPlayed = false;
-            HasFirstEffectPlayed = false;
+                //Turn off Emmiter
+                HeldChargeEffect.Stop();
+                HasSecondEffectPlayed = false;
+                HasFirstEffectPlayed = false;
 
-            // Release arrow
-            anim.ResetTrigger("Shoot");
-            anim.SetTrigger("Release");
-            ArrowCount--;
+                // Release arrow
+                anim.ResetTrigger("Shoot");
+                anim.SetTrigger("Release");
+                ArrowCount--;
 
-            // Stop audio
-            arrowSounds.Stop();
-            arrowSounds.clip = releaseSound;
-            arrowSounds.loop = false;
-            arrowSounds.Play();
+                // Stop audio
+                arrowSounds.Stop();
+                arrowSounds.clip = releaseSound;
+                arrowSounds.loop = false;
+                arrowSounds.Play();
 
-            // Spawn an arrow at the arrow position
-            Arrow newArrow = Instantiate(arrowPrefab);
-            newArrow.charge = charge;
-            newArrow.transform.position = arrowSpawn.transform.position;
-            newArrow.transform.rotation = arrowSpawn.transform.rotation;
+                // Spawn an arrow at the arrow position
+                Arrow newArrow = Instantiate(arrowPrefab);
+                Debug.Log(direction.magnitude);
+                newArrow.charge = direction.magnitude;
+                newArrow.transform.position = arrowSpawn.transform.position;
+                newArrow.transform.rotation = arrowSpawn.transform.rotation;
 
-            // Reset charge
-            charge = 0.0f;
-            //PowerSlider.value = charge;
+                // Reset charge
+                //charge = 0.0f;
+                //PowerSlider.value = charge;
+            }
         }
 
-        if(isCharging)
-        {
-            //Debug.Log("Charging");
+        //if(isCharging)
+        //{
+        //    //Debug.Log("Charging");
 
-            if(timeCharging <= fullChargeTime)
-            {
-                timeCharging += Time.deltaTime;
-            }
+        //    if(timeCharging <= fullChargeTime)
+        //    {
+        //        timeCharging += Time.deltaTime;
+        //    }
 
-            charge = (timeCharging / fullChargeTime) * 100;
+        //    charge = (timeCharging / fullChargeTime) * 100;
 
-            if(charge >= 48 && charge <= 52)
-            {
-                Debug.Log("Half");
-                HeldChargeEffectHalf.Play();
-                HasFirstEffectPlayed = true;
-            }
+        //    if(charge >= 48 && charge <= 52)
+        //    {
+        //        Debug.Log("Half");
+        //        HeldChargeEffectHalf.Play();
+        //        HasFirstEffectPlayed = true;
+        //    }
 
-            if(charge > 100)
-            {
-                charge = 100;
-                if (arrowSounds.clip != holdSound)
-                {
-                    arrowSounds.clip = holdSound;
-                    arrowSounds.loop = true;
-                    arrowSounds.Play();
-                }
-            }
+        //    if(charge > 100)
+        //    {
+        //        charge = 100;
+        //        if (arrowSounds.clip != holdSound)
+        //        {
+        //            arrowSounds.clip = holdSound;
+        //            arrowSounds.loop = true;
+        //            arrowSounds.Play();
+        //        }
+        //    }
 
-            if (!HasSecondEffectPlayed && charge >= secondEffect) {
-                HasSecondEffectPlayed = true;
-                HeldChargeEffect.Play();
-            }
+        //    if (!HasSecondEffectPlayed && charge >= secondEffect) {
+        //        HasSecondEffectPlayed = true;
+        //        HeldChargeEffect.Play();
+        //    }
 
-            //PowerSlider.value = charge;
-        }
+        //    //PowerSlider.value = charge;
+        //}
 
 
         //Screen Darken Image Fade

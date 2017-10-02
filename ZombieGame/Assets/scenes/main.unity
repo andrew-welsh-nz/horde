@@ -18551,6 +18551,7 @@ MonoBehaviour:
   CurrentScore: 0
   DisplayScore: 0
   HasStarted: 0
+  direction: {x: 0, y: 0, z: 0}
   GameOverText: {fileID: 1164454784}
   ScoreText: {fileID: 150491038}
 --- !u!54 &1359533388
@@ -18596,6 +18597,9 @@ MonoBehaviour:
   releaseSound: {fileID: 8300000, guid: c2cdf5fc7932a7d4288825d1b3c72bb9, type: 3}
   PointLight: {fileID: 647694048}
   ScreenFade: {fileID: 1518808035}
+  touchAreaBuffer: 2.5
+  direction: {x: 0, y: 0, z: 0}
+  hitPoint: {x: 0, y: 0, z: 0}
   BowRadialDisplay: {fileID: 2087087114}
   BowDisplayMaterial: {fileID: 2100000, guid: 5fd9080f0635d7c42bd46630e57581d3, type: 2}
   ArrowCount: 10

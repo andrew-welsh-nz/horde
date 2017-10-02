@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour {
     public int DisplayScore = 0;
     public bool HasStarted = false;
 
+    public Vector3 direction;
+
     private bool GameOverHasBeenCalled = false;
 
     [SerializeField]
@@ -22,11 +24,15 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     GameObject ScoreText;
 
+    shooting Shooting;
+
     void Awake () {
         floorMask = LayerMask.GetMask("Floor");
         CurrentScore = 0.0f;
         CurrentScore = 0.0f;
         GameOverHasBeenCalled = false;
+
+        Shooting = GetComponent<shooting>();
     }
 	
 	// Update is called once per frame
@@ -55,14 +61,17 @@ public class PlayerController : MonoBehaviour {
         RaycastHit floorhit;
 
         if (Physics.Raycast(camRay, out floorhit, camRayLength, floorMask)) {
-            Vector3 playerToMouse = floorhit.point - transform.position;
-            playerToMouse.y = 0.0f;
+            Vector3 direction = -(floorhit.point - transform.position);
+            direction.y = 0.0f;
 
-            Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
+            Quaternion newRotation = Quaternion.LookRotation(direction);
             GetComponent<Rigidbody>().MoveRotation(newRotation);
+
+            Shooting.direction = direction;
+            Shooting.hitPoint = floorhit.point;
+            //Debug.Log(direction.magnitude);
         }
     }
-
 
     public IEnumerator GameOver() {
         if (!GameOverHasBeenCalled)
