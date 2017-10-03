@@ -23,7 +23,7 @@ public class shooting : MonoBehaviour {
     bool HasSecondEffectPlayed = false;
 
     [SerializeField]
-    ParticleSystem HeldChargeEffect;
+    ParticleSystem HeldChargeEffect; 
     [SerializeField]
     ParticleSystem HeldChargeEffectHalf;
 
@@ -76,7 +76,7 @@ public class shooting : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
-        Debug.Log(direction.magnitude);
+       // Debug.Log(direction.magnitude);
 
         if (ArrowCount < 10)
         {
@@ -102,7 +102,7 @@ public class shooting : MonoBehaviour {
         {
             if(hitPoint.x >= this.transform.position.x - touchAreaBuffer && hitPoint.x <= this.transform.position.x + touchAreaBuffer && hitPoint.z >= this.transform.position.z - touchAreaBuffer && hitPoint.z <= this.transform.position.z + touchAreaBuffer)
             {
-                Debug.Log("MouseDown");
+             //   Debug.Log("MouseDown");
                 isCharging = true;
                 //HasSecondEffectPlayed = false;
                 anim.SetTrigger("Shoot");
@@ -116,7 +116,7 @@ public class shooting : MonoBehaviour {
         {
             if(isCharging)
             {
-                Debug.Log("MouseUp");
+              //  Debug.Log("MouseUp");
                 // Reset charging states
                 isCharging = false;
                 timeCharging = 0.0f;
@@ -139,7 +139,7 @@ public class shooting : MonoBehaviour {
 
                 // Spawn an arrow at the arrow position
                 Arrow newArrow = Instantiate(arrowPrefab);
-                Debug.Log(direction.magnitude);
+             //   Debug.Log(direction.magnitude);
                 newArrow.charge = direction.magnitude;
                 newArrow.transform.position = arrowSpawn.transform.position;
                 newArrow.transform.rotation = arrowSpawn.transform.rotation;
