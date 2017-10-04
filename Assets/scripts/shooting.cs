@@ -167,6 +167,8 @@ public class shooting : MonoBehaviour {
                 charge = 1.0f;
             }
 
+            anim.Play("Shooting", 0, charge);
+
             //Debug.Log("Charging");
 
             //if (timeCharging <= fullChargeTime)
