@@ -64,9 +64,6 @@ public class PlayerController : MonoBehaviour {
             Vector3 direction = -(floorhit.point - transform.position);
             direction.y = 0.0f;
 
-            Quaternion newRotation = Quaternion.LookRotation(direction);
-            GetComponent<Rigidbody>().MoveRotation(newRotation);
-
             Shooting.direction = direction;
             Shooting.hitPoint = floorhit.point;
             //Debug.Log(direction.magnitude);

@@ -13,6 +13,9 @@ public class shooting : MonoBehaviour {
     bool isCharging = false;
 
     [SerializeField]
+    float aimRadius;
+
+    [SerializeField]
     Slider PowerSlider;
 
     [SerializeField]
@@ -121,6 +124,8 @@ public class shooting : MonoBehaviour {
                 isCharging = false;
                 timeCharging = 0.0f;
 
+                charge *= 100;
+
                 //Turn off Emmiter
                 HeldChargeEffect.Stop();
                 HasSecondEffectPlayed = false;
@@ -150,42 +155,53 @@ public class shooting : MonoBehaviour {
             }
         }
 
-        //if(isCharging)
-        //{
-        //    //Debug.Log("Charging");
+        if (isCharging)
+        {
+            Quaternion newRotation = Quaternion.LookRotation(direction);
+            GetComponent<Rigidbody>().MoveRotation(newRotation);
 
-        //    if(timeCharging <= fullChargeTime)
-        //    {
-        //        timeCharging += Time.deltaTime;
-        //    }
+            charge = direction.magnitude / aimRadius;
 
-        //    charge = (timeCharging / fullChargeTime) * 100;
+            if (charge > 1.0f)
+            {
+                charge = 1.0f;
+            }
 
-        //    if(charge >= 48 && charge <= 52)
-        //    {
-        //        Debug.Log("Half");
-        //        HeldChargeEffectHalf.Play();
-        //        HasFirstEffectPlayed = true;
-        //    }
+            //Debug.Log("Charging");
 
-        //    if(charge > 100)
-        //    {
-        //        charge = 100;
-        //        if (arrowSounds.clip != holdSound)
-        //        {
-        //            arrowSounds.clip = holdSound;
-        //            arrowSounds.loop = true;
-        //            arrowSounds.Play();
-        //        }
-        //    }
+            //if (timeCharging <= fullChargeTime)
+            //{
+            //    timeCharging += Time.deltaTime;
+            //}
 
-        //    if (!HasSecondEffectPlayed && charge >= secondEffect) {
-        //        HasSecondEffectPlayed = true;
-        //        HeldChargeEffect.Play();
-        //    }
+            //charge = (timeCharging / fullChargeTime) * 100;
 
-        //    //PowerSlider.value = charge;
-        //}
+            //if (charge >= 48 && charge <= 52)
+            //{
+            //    Debug.Log("Half");
+            //    HeldChargeEffectHalf.Play();
+            //    HasFirstEffectPlayed = true;
+            //}
+
+            //if (charge > 100)
+            //{
+            //    charge = 100;
+            //    if (arrowSounds.clip != holdSound)
+            //    {
+            //        arrowSounds.clip = holdSound;
+            //        arrowSounds.loop = true;
+            //        arrowSounds.Play();
+            //    }
+            //}
+
+            //if (!HasSecondEffectPlayed && charge >= secondEffect)
+            //{
+            //    HasSecondEffectPlayed = true;
+            //    HeldChargeEffect.Play();
+            //}
+
+            //PowerSlider.value = charge;
+        }
 
 
         //Screen Darken Image Fade
