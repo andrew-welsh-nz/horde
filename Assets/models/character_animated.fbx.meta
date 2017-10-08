@@ -1,40 +1,41 @@
 fileFormatVersion: 2
-guid: 4e7fc35e283845948a4a66d314644317
-timeCreated: 1507079192
-licenseType: Pro
+guid: 10433ad177f90524b9ba1e2dedef81da
+timeCreated: 1507455569
+licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: Character
-    100002: Character_Arrow
-    100004: Character_Base
-    100006: Character_Bow
-    100008: Character_Head
-    100010: Character_mesh
-    100012: Character_Spine_1
-    100014: Character_Spine_2
-    100016: Character_Spine_3
-    100018: Character_Spine_4
-    100020: //RootNode
+    100002: //RootNode
+    100004: Character_Arrow
+    100006: Character_Base
+    100008: Character_Bow
+    100010: Character_Head
+    100012: Character_Mesh
+    100014: Character_Spine_1
+    100016: Character_Spine_2
+    100018: Character_Spine_3
+    100020: Character_Spine_4
     400000: Character
-    400002: Character_Arrow
-    400004: Character_Base
-    400006: Character_Bow
-    400008: Character_Head
-    400010: Character_mesh
-    400012: Character_Spine_1
-    400014: Character_Spine_2
-    400016: Character_Spine_3
-    400018: Character_Spine_4
-    400020: //RootNode
-    4300000: Character_mesh
+    400002: //RootNode
+    400004: Character_Arrow
+    400006: Character_Base
+    400008: Character_Bow
+    400010: Character_Head
+    400012: Character_Mesh
+    400014: Character_Spine_1
+    400016: Character_Spine_2
+    400018: Character_Spine_3
+    400020: Character_Spine_4
+    4300000: Character_Mesh
     7400000: Idle
-    7400002: Shoot
+    7400002: Shooting
     7400004: Reload
-    7400006: Get Hit
-    7400008: Get Hit 2
+    7400006: Hit 1
+    7400008: Hit 2
+    7400010: Death
     9500000: //RootNode
-    13700000: Character_mesh
+    13700000: Character_Mesh
   materials:
     importMaterials: 1
     materialName: 0
@@ -88,7 +89,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Shoot
+      name: Shooting
       takeName: Take 001
       firstFrame: 70
       lastFrame: 100
@@ -118,8 +119,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Reload
       takeName: Take 001
-      firstFrame: 150
-      lastFrame: 180
+      firstFrame: 155
+      lastFrame: 170
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -144,7 +145,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Get Hit
+      name: Hit 1
       takeName: Take 001
       firstFrame: 180
       lastFrame: 185
@@ -172,10 +173,38 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Get Hit 2
+      name: Hit 2
       takeName: Take 001
       firstFrame: 190
-      lastFrame: 195
+      lastFrame: 194
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 250
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
