@@ -16,6 +16,8 @@ public class ZombieController : MonoBehaviour {
     [SerializeField]
     float health = 50.0f;
 
+    public EnemySpawnControl controller;
+
     Animator anim;
 
     Vector3 lastArrow;
@@ -53,10 +55,14 @@ public class ZombieController : MonoBehaviour {
 
         if (health <= 0.0f)
         {
-            if (IsDead == false)
-            TargetObject.GetComponent<PlayerController>().CurrentScore += 5.0f;
-
-            IsDead = true;
+            if (!IsDead)
+            {
+                TargetObject.GetComponent<PlayerController>().CurrentScore += 5.0f;
+                controller.TotalDead++;
+                controller.WaveDead++;
+                IsDead = true;
+            }
+            
             //Collect Arrows
             TargetObject.GetComponent<shooting>().ArrowCount += StuckArrows;
             StuckArrows = 0;
