@@ -9,6 +9,11 @@ public class EnemySpawnControl : MonoBehaviour {
 
     public int TotalDead = 0;
 
+    int CurrentWave = 0;
+    int NumInWave = 5;
+    int WaveSpawned = 0;
+    public int WaveDead = 0;
+
     private bool IsCoolingDown = true;
     private float CoolDownTimer = 0.0f;
     private float TimeSinceStart = 0.0f;
@@ -21,12 +26,12 @@ public class EnemySpawnControl : MonoBehaviour {
             foreach (EnemySpawner Spawner in AllSpawners) {
                 Spawner.CanSpawnBigEnemies = true;
             }
-
         }
 
-        if (!IsCoolingDown) {
+        if (!IsCoolingDown && WaveSpawned < NumInWave) {
             StartCoroutine(SpawningEnemy());
             IsCoolingDown = true;
+            WaveSpawned++;
         }
         else {
             CoolDownTimer += Time.deltaTime;
@@ -44,12 +49,21 @@ public class EnemySpawnControl : MonoBehaviour {
             spawnTimer = 0.3f;
         }
 
+        if(WaveSpawned == NumInWave && WaveDead == NumInWave)
+        {
+            if(CurrentWave > 0)
+            {
+                NumInWave *= 2;
+            }
+            CurrentWave++;
+            WaveDead = 0;
+            WaveSpawned = 0;
+        }
+
 	}
 
     IEnumerator SpawningEnemy()  {
         AllSpawners[Random.Range(0, AllSpawners.Count)].StartSpawning();
         yield return new WaitForSeconds(0);
     }
-
-
 }

@@ -18901,7 +18901,7 @@ MonoBehaviour:
   releaseSound: {fileID: 8300000, guid: c2cdf5fc7932a7d4288825d1b3c72bb9, type: 3}
   PointLight: {fileID: 647694048}
   ScreenFade: {fileID: 1518808035}
-  touchAreaBuffer: 2.5
+  touchAreaBuffer: 3
   direction: {x: 0, y: 0, z: 0}
   hitPoint: {x: 0, y: 0, z: 0}
   BowRadialDisplay: {fileID: 2087087114}
@@ -31563,6 +31563,7 @@ MonoBehaviour:
   head: {fileID: 984552932}
   TargetObject: {fileID: 0}
   health: 50
+  controller: {fileID: 0}
   speed: 0.5
   ArrowChance: 15
 --- !u!195 &1813771171
@@ -32042,6 +32043,7 @@ MonoBehaviour:
   AllSpawners: []
   spawnTimer: 3
   TotalDead: 0
+  WaveDead: 0
 --- !u!4 &1880350759
 Transform:
   m_ObjectHideFlags: 0

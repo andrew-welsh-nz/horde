@@ -44,15 +44,18 @@ public class EnemySpawner : MonoBehaviour
                 if (CanSpawnBigEnemies){
                     //40% chance, spawn Big enemy
                     if (Random.Range(0.0f, 1.0f) <= 0.4f){
-                        Instantiate(BigEnemyPrefab, transform.position + SpawnVariance, Quaternion.identity);
+                        GameObject zombie = Instantiate(BigEnemyPrefab, transform.position + SpawnVariance, Quaternion.identity);
+                        zombie.GetComponent<ZombieController>().controller = SpawnControl;
                     }
                     else {
-                        Instantiate(enemyPrefab, transform.position + SpawnVariance, Quaternion.identity);
+                        GameObject zombie = Instantiate(enemyPrefab, transform.position + SpawnVariance, Quaternion.identity);
+                        zombie.GetComponent<ZombieController>().controller = SpawnControl;
                     }
                 }
                 else
                 {
-                    Instantiate(enemyPrefab, transform.position + SpawnVariance, Quaternion.identity);
+                    GameObject zombie = Instantiate(enemyPrefab, transform.position + SpawnVariance, Quaternion.identity);
+                    zombie.GetComponent<ZombieController>().controller = SpawnControl;
                 }
 
                 Debug.Log("Spawning Prefab");
