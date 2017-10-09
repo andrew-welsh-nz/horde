@@ -145,7 +145,7 @@ public class shooting : MonoBehaviour {
                 // Spawn an arrow at the arrow position
                 Arrow newArrow = Instantiate(arrowPrefab);
              //   Debug.Log(direction.magnitude);
-                newArrow.charge = direction.magnitude;
+                newArrow.charge = charge;
                 newArrow.transform.position = arrowSpawn.transform.position;
                 newArrow.transform.rotation = arrowSpawn.transform.rotation;
 
