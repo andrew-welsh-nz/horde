@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemySpawnControl : MonoBehaviour {
 
     public List<EnemySpawner> AllSpawners= new List<EnemySpawner>();
     public float spawnTimer = 3.0f;
+
+    float textTimer = 2.5f;
 
     public int TotalDead = 0;
 
@@ -17,6 +20,9 @@ public class EnemySpawnControl : MonoBehaviour {
     private bool IsCoolingDown = true;
     private float CoolDownTimer = 0.0f;
     private float TimeSinceStart = 0.0f;
+
+    [SerializeField]
+    Text WaveText;
 
     // Update is called once per frame
     void Update() {
@@ -56,11 +62,22 @@ public class EnemySpawnControl : MonoBehaviour {
                 NumInWave *= 2;
             }
             CurrentWave++;
+            WaveText.gameObject.SetActive(true);
+            WaveText.text = "Wave " + CurrentWave.ToString();
             WaveDead = 0;
             WaveSpawned = 0;
         }
 
-	}
+        if (WaveText.IsActive())
+        {
+            textTimer -= Time.deltaTime;
+            if (textTimer <= 0.0f)
+            {
+                textTimer = 2.5f;
+                WaveText.gameObject.SetActive(false);
+            }
+        }
+    }
 
     IEnumerator SpawningEnemy()  {
         AllSpawners[Random.Range(0, AllSpawners.Count)].StartSpawning();
