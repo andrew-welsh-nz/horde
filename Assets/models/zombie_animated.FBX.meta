@@ -14,6 +14,7 @@ ModelImporter:
     100012: Zombie_Spine_2
     100014: Zombie_Spine_3
     100016: Zombie_Spine_4
+    100018: Zombie_Mesh
     400000: Zombie
     400002: //RootNode
     400004: Zombie_Base
@@ -23,13 +24,16 @@ ModelImporter:
     400012: Zombie_Spine_2
     400014: Zombie_Spine_3
     400016: Zombie_Spine_4
+    400018: Zombie_Mesh
     4300000: zombie_mesh
+    4300002: Zombie_Mesh
     7400000: Idle
     7400002: Walk
     7400004: Death
     7400006: Attack
     9500000: //RootNode
     13700000: zombie_mesh
+    13700002: Zombie_Mesh
   materials:
     importMaterials: 1
     materialName: 0
