@@ -65,6 +65,15 @@ public class shooting : MonoBehaviour {
     public GameObject BowRadialDisplay;
     public Material BowDisplayMaterial;
 
+    //Arrow Line Stuff
+    public GameObject ArrowLine;
+    public GameObject ArrowTip;
+
+    Vector3 ArrowLineStart;
+    Vector3 ArrowLineEnd;
+    
+    float LineDistance = 100;
+
     public int ArrowCount = 10;
 
     float ScreenDarkenTarget = 0;
@@ -169,6 +178,28 @@ public class shooting : MonoBehaviour {
 
             anim.Play("Shooting", 0, charge);
 
+            //ArrowLine set active while charging
+            if ((charge >= 0.15f) && charge <= 1.5f)
+            {
+                ArrowLine.SetActive(true);
+
+                ArrowLine.GetComponent<LineRenderer>().startWidth = 0.1f;
+                ArrowLine.GetComponent<LineRenderer>().endWidth = (charge * 2);
+
+                //Set start position to arrow tip, set end to player direction * distance
+                ArrowLineStart = ArrowTip.transform.position;
+                ArrowLineEnd = (transform.rotation * Vector3.forward) * LineDistance;
+
+                ArrowLine.GetComponent<LineRenderer>().SetPosition(0, ArrowLineStart);
+                ArrowLine.GetComponent<LineRenderer>().SetPosition(1, ArrowLineEnd);
+
+                ArrowLine.GetComponent<LineRenderer>().material.color = new Color(0,0,0, charge /2);
+            }
+            else
+            {
+                ArrowLine.SetActive(false);
+            }
+
             //Debug.Log("Charging");
 
             //if (timeCharging <= fullChargeTime)
@@ -203,6 +234,10 @@ public class shooting : MonoBehaviour {
             //}
 
             //PowerSlider.value = charge;
+        }
+        else
+        {
+            ArrowLine.SetActive(false);
         }
 
 
