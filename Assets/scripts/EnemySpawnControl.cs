@@ -24,6 +24,9 @@ public class EnemySpawnControl : MonoBehaviour {
     [SerializeField]
     Text WaveText;
 
+    [SerializeField]
+    EnvironmentManager StageManager;
+
     // Update is called once per frame
     void Update() {
 
@@ -66,6 +69,7 @@ public class EnemySpawnControl : MonoBehaviour {
             WaveText.text = "Wave " + CurrentWave.ToString();
             WaveDead = 0;
             WaveSpawned = 0;
+            StageManager.ChangeSet();
         }
 
         if (WaveText.IsActive())
