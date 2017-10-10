@@ -271,12 +271,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -493,6 +513,30 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.2348394
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
   m_IsPrefabParent: 0
@@ -589,12 +633,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -918,6 +978,26 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 100000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
   m_IsPrefabParent: 0
@@ -1110,6 +1190,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -1300,12 +1396,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -1515,6 +1627,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -1597,6 +1725,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -1817,6 +1961,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -1918,12 +2078,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -2013,6 +2189,30 @@ Prefab:
     - target: {fileID: 400000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.72674143
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
@@ -2150,12 +2350,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -2244,12 +2460,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -2346,12 +2578,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -2428,12 +2680,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -2514,12 +2782,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -6049,6 +6333,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -6141,12 +6441,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -6512,6 +6828,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -10062,12 +10394,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -13599,12 +13947,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -13828,6 +14196,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -14006,12 +14390,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -14296,12 +14696,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -14552,12 +14968,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
   m_IsPrefabParent: 0
@@ -14646,12 +15082,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -14730,6 +15182,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -14866,12 +15334,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -15151,7 +15635,7 @@ Light:
   m_SpotAngle: 69.5
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.251
@@ -15306,6 +15790,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -15383,6 +15883,30 @@ Prefab:
     - target: {fileID: 400000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.72674096
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
@@ -15470,6 +15994,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -15546,12 +16086,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -15628,12 +16184,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -15752,7 +16324,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &685502693
 Transform:
@@ -15888,6 +16460,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -15965,6 +16553,30 @@ Prefab:
     - target: {fileID: 400000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
@@ -16266,12 +16878,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -16703,12 +17331,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -16896,6 +17544,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -17144,12 +17808,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -17236,6 +17916,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -17312,12 +18008,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
   m_IsPrefabParent: 0
@@ -17400,6 +18116,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -17632,12 +18364,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -17732,6 +18480,30 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
   m_IsPrefabParent: 0
@@ -17810,6 +18582,30 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.0393841
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
   m_IsPrefabParent: 0
@@ -17886,12 +18682,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -18012,12 +18824,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -18025,6 +18853,92 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_PrefabInternal: {fileID: 852214080}
+--- !u!1 &867684489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 867684490}
+  - component: {fileID: 867684493}
+  - component: {fileID: 867684492}
+  - component: {fileID: 867684491}
+  m_Layer: 5
+  m_Name: FPS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &867684490
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 867684489}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1404917693}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00001049, y: -185.65}
+  m_SizeDelta: {x: 730.1, y: 52.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &867684491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 867684489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 945a43ddf88f8ab48a3e7c6ba65b52d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &867684492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 867684489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4cbb3dbf270b1744a9bf4fe1a34cc2aa, type: 3}
+    m_FontSize: 39
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Fps: '
+--- !u!222 &867684493
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 867684489}
 --- !u!1 &874886946 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
@@ -18210,6 +19124,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -18230,7 +19160,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &896383902
 Transform:
@@ -18667,7 +19597,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &942493132
 Transform:
@@ -18775,6 +19705,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -19009,6 +19955,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -19089,12 +20051,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -19271,6 +20249,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -19409,12 +20403,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -19481,6 +20491,26 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 100000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
   m_IsPrefabParent: 0
@@ -19549,12 +20579,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -19645,6 +20695,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -19726,6 +20792,30 @@ Prefab:
     - target: {fileID: 400000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.94339657
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
@@ -19860,6 +20950,26 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 100000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
   m_IsPrefabParent: 0
@@ -19952,12 +21062,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -20054,12 +21180,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -20140,12 +21282,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -20306,6 +21464,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -20530,6 +21704,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -20622,12 +21812,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -20832,6 +22038,30 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.9433969
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
   m_IsPrefabParent: 0
@@ -20914,6 +22144,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -20990,12 +22236,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
   m_IsPrefabParent: 0
@@ -21092,12 +22358,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -21178,12 +22460,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -21260,12 +22558,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -21444,12 +22758,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -21532,6 +22862,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -25280,6 +26626,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -28693,6 +30055,7 @@ RectTransform:
   - {fileID: 1164454785}
   - {fileID: 1518808036}
   - {fileID: 1597655092}
+  - {fileID: 867684490}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28904,12 +30267,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -28996,6 +30375,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -29098,6 +30493,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -29194,12 +30605,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -29302,6 +30729,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e9199b102c7aad47b869efc3a60c327, type: 3}
   m_IsPrefabParent: 0
@@ -29414,12 +30857,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -29566,6 +31025,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -29642,12 +31117,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -29773,6 +31264,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -29949,6 +31456,30 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
   m_IsPrefabParent: 0
@@ -30085,12 +31616,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -30210,12 +31757,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -30288,12 +31851,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -30354,12 +31933,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -30470,6 +32065,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -30907,6 +32518,30 @@ Prefab:
     - target: {fileID: 400000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9433966
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
@@ -31380,6 +33015,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -31458,6 +33109,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -31532,6 +33199,26 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 100000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3284a149d32c26b46a9d4782703d5a23, type: 3}
   m_IsPrefabParent: 0
@@ -35297,6 +36984,30 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.9433964
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
   m_IsPrefabParent: 0
@@ -35442,6 +37153,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -35476,11 +37203,11 @@ Light:
   m_Type: 2
   m_Color: {r: 0.069937, g: 0.07215617, b: 0.097, a: 1}
   m_Intensity: 2.75
-  m_Range: 500
+  m_Range: 450
   m_SpotAngle: 69.5
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0
@@ -35494,8 +37221,8 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
+  m_Lightmapping: 2
+  m_AreaSize: {x: 3.1, y: 0.39}
   m_BounceIntensity: 1
   m_FalloffTable:
     m_Table[0]: 0
@@ -35593,12 +37320,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -35961,12 +37708,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -36043,12 +37806,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -36287,6 +38066,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -36391,12 +38186,32 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -36489,12 +38304,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -36555,12 +38386,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -36581,7 +38428,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 9
   m_IsActive: 1
 --- !u!23 &2015371560
 MeshRenderer:
@@ -36789,6 +38636,22 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -36861,12 +38724,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -36959,12 +38838,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 735fe709f99a3cf42a1db223fb7ec77c, type: 2}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d9a3461bf79d0a449af4332f1d62731, type: 3}
   m_IsPrefabParent: 0
@@ -37210,6 +39105,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -37394,6 +39305,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: eb593ca5b6424604da6693c03947c4e7, type: 2}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5fedb239f937eb94295ef98fd111ada5, type: 3}
   m_IsPrefabParent: 0
@@ -37553,6 +39480,30 @@ Prefab:
     - target: {fileID: 400000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 10.652
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eac9e7a6b11c2174e99202ad2a737ab1, type: 3}
