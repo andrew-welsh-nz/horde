@@ -95,13 +95,6 @@ public class shooting : MonoBehaviour {
             PointLight.range = 20 + 4 * ArrowCount;
         }
 
-        //Sets the fill amount for the BowRadial's Image component
-        BowRadialDisplay.GetComponent<Image>().fillAmount = charge / 100;
-
-        //Makes the BowDisplayColour variable, converts the charge to a byte and sets it
-        Color32 BowDisplayColour = BowDisplayMaterial.GetColor("_Color");
-        BowDisplayColour.a = (byte)charge;
-        BowDisplayMaterial.SetColor("_Color", BowDisplayColour);
 
         ArrowCountText.text = ArrowCount.ToString();
 
@@ -181,6 +174,13 @@ public class shooting : MonoBehaviour {
             //ArrowLine set active while charging
             if ((charge >= 0.15f) && charge <= 1.5f)
             {
+
+                BowRadialDisplay.GetComponent<Image>().fillAmount = charge ;
+
+                Color32 BowDisplayColour = BowDisplayMaterial.GetColor("_Color");
+                BowDisplayColour.a = (byte)(charge * 100);
+                BowDisplayMaterial.SetColor("_Color", BowDisplayColour);
+
                 ArrowLine.SetActive(true);
 
                 ArrowLine.GetComponent<LineRenderer>().startWidth = 0.1f;
@@ -197,6 +197,12 @@ public class shooting : MonoBehaviour {
             }
             else
             {
+                //Disables the shooting displays
+
+                Color32 BowDisplayColour = BowDisplayMaterial.GetColor("_Color");
+                BowDisplayColour.a = (byte)(0);
+                BowDisplayMaterial.SetColor("_Color", BowDisplayColour);
+
                 ArrowLine.SetActive(false);
             }
 
@@ -237,6 +243,12 @@ public class shooting : MonoBehaviour {
         }
         else
         {
+            //Disables the shooting displays
+
+            Color32 BowDisplayColour = BowDisplayMaterial.GetColor("_Color");
+            BowDisplayColour.a = (byte)(0);
+            BowDisplayMaterial.SetColor("_Color", BowDisplayColour);
+
             ArrowLine.SetActive(false);
         }
 

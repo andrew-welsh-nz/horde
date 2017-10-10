@@ -17761,7 +17761,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: d5cff9d2eddb62b4db3961a4c05706da, type: 3}
+  m_Mesh: {fileID: 4300002, guid: d5cff9d2eddb62b4db3961a4c05706da, type: 3}
   m_Bones:
   - {fileID: 2107014353}
   - {fileID: 1492767506}
@@ -18937,7 +18937,6 @@ MonoBehaviour:
   BowDisplayMaterial: {fileID: 2100000, guid: 5fd9080f0635d7c42bd46630e57581d3, type: 2}
   ArrowLine: {fileID: 1691028558}
   ArrowTip: {fileID: 621738224}
-  ArrowLineMat: {fileID: 0}
   ArrowCount: 10
 --- !u!136 &1359533390
 CapsuleCollider:
