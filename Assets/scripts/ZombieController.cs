@@ -147,11 +147,11 @@ public class ZombieController : MonoBehaviour {
             if (Random.value <= (ArrowChance))
             {
                 TargetObject.GetComponent<shooting>().ArrowCount += 1;
-                Debug.Log("Arrow Drop!");
+               // Debug.Log("Arrow Drop!");
             }
             else
             {
-                Debug.Log("No Drop!");
+                //Debug.Log("No Drop!");
             }
         }
         
@@ -164,7 +164,7 @@ public class ZombieController : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Is colliding with: "+ collision.gameObject.name);
+       // Debug.Log("Is colliding with: "+ collision.gameObject.name);
 
         if(collision.gameObject.tag == "Arrow")
         {
