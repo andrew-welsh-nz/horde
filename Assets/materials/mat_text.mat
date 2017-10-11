@@ -11,7 +11,6 @@ Material:
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHABLEND_ON _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
   stringTagMap:
     RenderType: Transparent
@@ -73,5 +72,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 0
     m_Colors:
+<<<<<<< HEAD
     - _Color: {r: 1, g: 1, b: 1, a: 0.047058824}
+=======
+    - _Color: {r: 1, g: 1, b: 1, a: 0.03529412}
+>>>>>>> School_Patrick
     - _EmissionColor: {r: 1.218, g: 1.218, b: 1.218, a: 1}
