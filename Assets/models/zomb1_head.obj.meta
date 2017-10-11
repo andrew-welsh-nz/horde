@@ -1,42 +1,17 @@
 fileFormatVersion: 2
-guid: ea93798d5ee32a1459f712af1df6ec80
-timeCreated: 1507692342
+guid: 4f4da96ee874ee744900de1dab9a3811
+timeCreated: 1507516506
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: pCube24
-    100004: pCube25
-    100006: pCube26
-    100008: pCube27
-    100010: pCube29
-    100012: pCube30
-    100014: pCube31
-    100016: transform1
-    100018: transform2
-    100020: transform3
-    100022: transform4
-    100024: transform5
-    100026: transform6
-    400000: //RootNode
-    400002: pCube24
-    400004: pCube25
-    400006: pCube26
-    400008: pCube27
-    400010: pCube29
-    400012: pCube30
-    400014: pCube31
-    400016: transform1
-    400018: transform2
-    400020: transform3
-    400022: transform4
-    400024: transform5
-    400026: transform6
-    2300000: pCube31
-    3300000: pCube31
-    4300000: pCube31
-    9500000: //RootNode
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2300000: default
+    3300000: default
+    4300000: default
   materials:
     importMaterials: 1
     materialName: 0
@@ -64,7 +39,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 85
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -106,7 +81,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
