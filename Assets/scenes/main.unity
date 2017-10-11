@@ -15635,7 +15635,7 @@ Light:
   m_SpotAngle: 69.5
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 0.251
@@ -37202,7 +37202,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.069937, g: 0.07215617, b: 0.097, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2
   m_Range: 300
   m_SpotAngle: 69.5
   m_CookieSize: 10
@@ -37221,7 +37221,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 3.1, y: 0.39}
   m_BounceIntensity: 1
   m_FalloffTable:
@@ -38428,7 +38428,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 9
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &2015371560
 MeshRenderer:

@@ -19,7 +19,6 @@ public class EnemySpawnControl : MonoBehaviour {
 
     private bool IsCoolingDown = true;
     private float CoolDownTimer = 0.0f;
-    private float TimeSinceStart = 0.0f;
 
     [SerializeField]
     Text WaveText;
@@ -30,12 +29,12 @@ public class EnemySpawnControl : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        TimeSinceStart += Time.deltaTime;
-        if (TimeSinceStart >= 30.0f){
-            foreach (EnemySpawner Spawner in AllSpawners) {
-                Spawner.CanSpawnBigEnemies = true;
-            }
-        }
+        //TimeSinceStart += Time.deltaTime;
+        //if (TimeSinceStart >= 30.0f){
+        //    foreach (EnemySpawner Spawner in AllSpawners) {
+        //        Spawner.CanSpawnBigEnemies = true;
+        //    }
+        //}
 
         if (!IsCoolingDown && WaveSpawned < NumInWave) {
             StartCoroutine(SpawningEnemy());
