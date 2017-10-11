@@ -66,8 +66,13 @@ public class shooting : MonoBehaviour {
     public Material BowDisplayMaterial;
 
     //Arrow Line Stuff
-    public GameObject ArrowLine;
-    public GameObject ArrowTip;
+    public GameObject ArrowLineL;
+    public GameObject ArrowLineR;
+    float ArrowLineDistTarg = 0.75f;
+    float ArrowLineDist = 1.5f;
+    float ArrowLineWidth = 1;
+    float ArrowLineAlpha = 0;
+    public Material ArrowLineMat;
 
     Vector3 ArrowLineStart;
     Vector3 ArrowLineEnd;
@@ -159,9 +164,6 @@ public class shooting : MonoBehaviour {
 
         if (isCharging)
         {
-            Quaternion newRotation = Quaternion.LookRotation(direction);
-            GetComponent<Rigidbody>().MoveRotation(newRotation);
-
             charge = direction.magnitude / aimRadius;
 
             if (charge > 1.0f)
@@ -171,40 +173,42 @@ public class shooting : MonoBehaviour {
 
             anim.Play("Shooting", 0, charge);
 
-            //ArrowLine set active while charging
-            if ((charge >= 0.15f) && charge <= 1.5f)
+            //Arrow Display
+
+            ArrowLineL.SetActive(true);
+            ArrowLineR.SetActive(true);
+
+            if (charge <= 0.95)
             {
+                ArrowLineAlpha = charge * 0.5f;
 
-                BowRadialDisplay.GetComponent<Image>().fillAmount = charge ;
-
-                Color32 BowDisplayColour = BowDisplayMaterial.GetColor("_Color");
-                BowDisplayColour.a = (byte)(charge * 100);
-                BowDisplayMaterial.SetColor("_Color", BowDisplayColour);
-
-                ArrowLine.SetActive(true);
-
-                ArrowLine.GetComponent<LineRenderer>().startWidth = 0.1f;
-                ArrowLine.GetComponent<LineRenderer>().endWidth = (charge * 2);
-
-                //Set start position to arrow tip, set end to player direction * distance
-                ArrowLineStart = ArrowTip.transform.position;
-                ArrowLineEnd = (transform.rotation * Vector3.forward) * LineDistance;
-
-                ArrowLine.GetComponent<LineRenderer>().SetPosition(0, ArrowLineStart);
-                ArrowLine.GetComponent<LineRenderer>().SetPosition(1, ArrowLineEnd);
-
-                ArrowLine.GetComponent<LineRenderer>().material.color = new Color(0,0,0, charge /2);
+                if (charge <= 0.5f)
+                {
+                    ArrowLineDist = ArrowLineDistTarg - ((charge * 2) * ArrowLineDistTarg);
+                    ArrowLineWidth = charge * 1f;
+                }
+                else
+                {
+                    ArrowLineDist = 0.0f;
+                    ArrowLineWidth = (charge * 3f);
+                }
             }
             else
             {
-                //Disables the shooting displays
-
-                Color32 BowDisplayColour = BowDisplayMaterial.GetColor("_Color");
-                BowDisplayColour.a = (byte)(0);
-                BowDisplayMaterial.SetColor("_Color", BowDisplayColour);
-
-                ArrowLine.SetActive(false);
+                ArrowLineAlpha = 1;
+                ArrowLineWidth = 5.0f;
             }
+
+            ArrowLineL.GetComponent<RectTransform>().localPosition = new Vector3(ArrowLineDist, 0, 0);
+            ArrowLineR.GetComponent<RectTransform>().localPosition = new Vector3(-ArrowLineDist, 0, 0);
+
+            ArrowLineL.GetComponent<RectTransform>().localScale = new Vector3(ArrowLineWidth, 1, 1);
+            ArrowLineR.GetComponent<RectTransform>().localScale = new Vector3(ArrowLineWidth, 1, 1);
+
+            ArrowLineMat.color = new Color(0, 0, 0, ArrowLineAlpha);
+
+            Quaternion newRotation = Quaternion.LookRotation(direction);
+            GetComponent<Rigidbody>().MoveRotation(newRotation);
 
             //Debug.Log("Charging");
 
@@ -245,13 +249,13 @@ public class shooting : MonoBehaviour {
         {
             //Disables the shooting displays
 
+            ArrowLineL.SetActive(false);
+            ArrowLineR.SetActive(false);
+
             Color32 BowDisplayColour = BowDisplayMaterial.GetColor("_Color");
             BowDisplayColour.a = (byte)(0);
             BowDisplayMaterial.SetColor("_Color", BowDisplayColour);
-
-            ArrowLine.SetActive(false);
         }
-
 
         //Screen Darken Image Fade
         var ScreenDarkenCurrent = ScreenFade.GetComponent<Image>().color;
