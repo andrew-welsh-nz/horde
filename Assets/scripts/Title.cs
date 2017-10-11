@@ -22,6 +22,7 @@ public class Title : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
         //sprite = GetComponent<SpriteRenderer>();
         Color32 TitleColour = TitleMaterial.GetColor("_Color");
         TitleColour.a = (byte)0;
