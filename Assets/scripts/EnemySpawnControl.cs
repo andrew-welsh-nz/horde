@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class EnemySpawnControl : MonoBehaviour {
 
     public List<EnemySpawner> AllSpawners= new List<EnemySpawner>();
-    public float spawnTimer = 3.0f;
+    public float spawnTimer = 2.5f;
 
     float textTimer = 2.5f;
 
     public int TotalDead = 0;
 
-    int CurrentWave = 0;
+    int CurrentWave = 1;
     int NumInWave = 5;
     int WaveSpawned = 0;
     public int WaveDead = 0;
@@ -29,13 +29,7 @@ public class EnemySpawnControl : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        //TimeSinceStart += Time.deltaTime;
-        //if (TimeSinceStart >= 30.0f){
-        //    foreach (EnemySpawner Spawner in AllSpawners) {
-        //        Spawner.CanSpawnBigEnemies = true;
-        //    }
-        //}
-
+        //When triggered Spawn a zombie and initiate a cooldown
         if (!IsCoolingDown && WaveSpawned < NumInWave) {
             StartCoroutine(SpawningEnemy());
             IsCoolingDown = true;
@@ -50,27 +44,23 @@ public class EnemySpawnControl : MonoBehaviour {
             CoolDownTimer = 0.0f;
         }
 
-        if (spawnTimer > 0.3f) {
-            spawnTimer -= Time.deltaTime * (2.0f / 90.0f);
-        }
-        else {
-            spawnTimer = 0.3f;
-        }
-
+        //If the wave has been completed
         if(WaveSpawned == NumInWave && WaveDead == NumInWave)
         {
             if(CurrentWave > 0)
             {
-                NumInWave *= 2;
+                NumInWave = CurrentWave * 3 + 5;
+                GetComponentInChildren<EnemySpawner>().CanSpawnBigEnemies = true;
             }
             CurrentWave++;
             WaveText.gameObject.SetActive(true);
-            WaveText.text = "Wave " + CurrentWave.ToString();
+            WaveText.text = "Wave " + (CurrentWave).ToString();
             WaveDead = 0;
             WaveSpawned = 0;
             StageManager.ChangeSet();
         }
 
+        //Manages displaying Text
         if (WaveText.IsActive())
         {
             textTimer -= Time.deltaTime;

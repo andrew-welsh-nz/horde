@@ -28,7 +28,6 @@ public class EnemySpawner : MonoBehaviour
     IEnumerator SpawningEnemy()
     {
         AttemptingSpawn = true;
-        Debug.Log("Spawn Enemy Function");
             do
             {
                 //Creates a small variance to the spawning so its a spawn cricle not a spawn point
@@ -40,10 +39,8 @@ public class EnemySpawner : MonoBehaviour
             if (Tester.GetComponent<SpawnTester>().allClear)
                 {
                     Destroy(Tester);
-
-                if (CanSpawnBigEnemies){
-                    //40% chance, spawn Big enemy
-                    if (Random.Range(0.0f, 1.0f) <= 0.4f){
+                    //30% chance, spawn Big enemy
+                    if (Random.Range(0.0f, 1.0f) <= 0.3f){
                         GameObject zombie = Instantiate(BigEnemyPrefab, transform.position + SpawnVariance, Quaternion.identity);
                         zombie.GetComponent<ZombieController>().controller = SpawnControl;
                     }
@@ -51,14 +48,6 @@ public class EnemySpawner : MonoBehaviour
                         GameObject zombie = Instantiate(enemyPrefab, transform.position + SpawnVariance, Quaternion.identity);
                         zombie.GetComponent<ZombieController>().controller = SpawnControl;
                     }
-                }
-                else
-                {
-                    GameObject zombie = Instantiate(enemyPrefab, transform.position + SpawnVariance, Quaternion.identity);
-                    zombie.GetComponent<ZombieController>().controller = SpawnControl;
-                }
-
-                Debug.Log("Spawning Prefab");
 
                 AttemptingSpawn = false;
                 break;
