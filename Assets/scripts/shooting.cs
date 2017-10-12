@@ -73,6 +73,7 @@ public class shooting : MonoBehaviour {
     float ArrowLineWidth = 1;
     float ArrowLineAlpha = 0;
     float ArrowLineLength = 100f;
+
     public Material ArrowLineMat;
 
     Vector3 ArrowLineStart;
