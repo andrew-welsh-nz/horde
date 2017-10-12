@@ -72,12 +72,11 @@ public class shooting : MonoBehaviour {
     float ArrowLineDist = 1.5f;
     float ArrowLineWidth = 1;
     float ArrowLineAlpha = 0;
+    float ArrowLineLength = 100f;
     public Material ArrowLineMat;
 
     Vector3 ArrowLineStart;
     Vector3 ArrowLineEnd;
-    
-    float LineDistance = 100;
 
     public int ArrowCount = 10;
 
@@ -184,27 +183,54 @@ public class shooting : MonoBehaviour {
 
                 if (charge <= 0.5f)
                 {
+                    //If charge is less than 0.5, use charge to determine the distance from the centre the two lines are, and control the width
+
                     ArrowLineDist = ArrowLineDistTarg - ((charge * 2) * ArrowLineDistTarg);
                     ArrowLineWidth = charge * 1f;
                 }
                 else
                 {
+                    //If charge is over 0.5, keep lines at centre, while buff up the scale rate
+
                     ArrowLineDist = 0.0f;
                     ArrowLineWidth = (charge * 3f);
                 }
             }
             else
             {
+                //Make the line width huge above 0.95 charge
                 ArrowLineAlpha = 1;
                 ArrowLineWidth = 5.0f;
             }
 
+            //Raycast to get distance for the line
+
+            RaycastHit ArrowLineInfo;
+
+            if (Physics.Raycast(new Vector3 (transform.position.x, 1.75f, transform.position.z), transform.forward, out ArrowLineInfo))
+            {
+                ArrowLineLength = ArrowLineInfo.distance;
+            }
+            else
+            {
+                ArrowLineLength = 100;
+            }
+            
+            //Setting the line's dynamic actions
+
+            //Position
             ArrowLineL.GetComponent<RectTransform>().localPosition = new Vector3(ArrowLineDist, 0, 0);
             ArrowLineR.GetComponent<RectTransform>().localPosition = new Vector3(-ArrowLineDist, 0, 0);
 
+            //Scale
             ArrowLineL.GetComponent<RectTransform>().localScale = new Vector3(ArrowLineWidth, 1, 1);
             ArrowLineR.GetComponent<RectTransform>().localScale = new Vector3(ArrowLineWidth, 1, 1);
 
+            //Length
+            ArrowLineL.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, ArrowLineLength);
+            ArrowLineR.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, ArrowLineLength);
+
+            //Colour
             ArrowLineMat.color = new Color(0, 0, 0, ArrowLineAlpha);
 
             Quaternion newRotation = Quaternion.LookRotation(direction);
