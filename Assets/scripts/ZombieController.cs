@@ -183,9 +183,12 @@ public class ZombieController : MonoBehaviour {
 
                 collision.gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 collision.gameObject.GetComponent<Rigidbody>().detectCollisions = false;
+                
+                //Making arrow attach to head
+                collision.gameObject.transform.SetParent(this.transform.GetChild(1).transform);
+                collision.gameObject.transform.localPosition = new Vector3(0, 0, 2);
+                collision.gameObject.transform.LookAt(this.transform.GetChild(1).transform);
 
-
-                collision.gameObject.transform.SetParent(this.gameObject.transform);
                 // collision.transform.position += new Vector3(0.0f, 1.8f, 0.0f);
                 collision.transform.position += collision.gameObject.transform.forward * 1.0f;
             }
