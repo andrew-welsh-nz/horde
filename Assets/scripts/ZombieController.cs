@@ -192,6 +192,9 @@ public class ZombieController : MonoBehaviour {
                 // collision.transform.position += new Vector3(0.0f, 1.8f, 0.0f);
                 collision.transform.position += collision.gameObject.transform.forward * 1.0f;
             }
+
+            //Emit particle
+            this.transform.Find("PS_Enemy").GetComponent<ParticleSystem>().Emit(10);
         }
     }
 }
