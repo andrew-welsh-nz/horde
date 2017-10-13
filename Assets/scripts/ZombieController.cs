@@ -194,7 +194,9 @@ public class ZombieController : MonoBehaviour {
             }
 
             //Emit particle
-            this.transform.Find("PS_Enemy").GetComponent<ParticleSystem>().Emit(10);
+            var emitParams = new ParticleSystem.EmitParams();
+            emitParams.startLifetime = 1.5f;
+            this.transform.Find("PS_Enemy").GetComponent<ParticleSystem>().Emit(emitParams, Random.Range(3, 7));
         }
     }
 }
