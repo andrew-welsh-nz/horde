@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField]
-    GameObject enemyPrefab;
+
     [SerializeField]
     GameObject TestSpawnPrefab;
-    [SerializeField]
-    GameObject BigEnemyPrefab;
+
+    private GameObject enemyPrefab;
+    private GameObject BigEnemyPrefab;
+    private SpecialEnemy SpecialEnemy1;
+    private SpecialEnemy SpecialEnemy2;
+    private SpecialEnemy SpecialEnemy3;
 
     [SerializeField]
     float MaxSpawnDistanceVariance;
@@ -17,12 +20,20 @@ public class EnemySpawner : MonoBehaviour
     bool AttemptingSpawn = false;
     EnemySpawnControl SpawnControl;
 
-    public bool CanSpawnBigEnemies = false;
+    public int WaveCounter = 1;
 
     void Awake()
     {
         SpawnControl = GetComponentInParent<EnemySpawnControl>();
         SpawnControl.AllSpawners.Add(this);
+    }
+
+    private void Start(){
+        enemyPrefab = SpawnControl.enemyPrefab;
+        BigEnemyPrefab = SpawnControl.BigEnemyPrefab;
+        SpecialEnemy1 = SpawnControl.SpecialEnemy1;
+        SpecialEnemy2 = SpawnControl.SpecialEnemy2;
+        SpecialEnemy3 = SpawnControl.SpecialEnemy3;
     }
 
     IEnumerator SpawningEnemy()
@@ -39,8 +50,52 @@ public class EnemySpawner : MonoBehaviour
             if (Tester.GetComponent<SpawnTester>().allClear)
                 {
                     Destroy(Tester);
-                    //30% chance, spawn Big enemy
-                    if (Random.Range(0.0f, 1.0f) <= 0.3f){
+
+
+                float RemainingPercent = 100.0f;
+                //Spawn the Enemy
+
+                //Check Spawning chance for Special Enemy 1
+                if (SpecialEnemy1.Prefab != null && SpecialEnemy1.StartSpawningWave <= WaveCounter)
+                {
+                    if (Random.Range(0.0f, 100.0f) <= SpecialEnemy1.SpawnChance *(RemainingPercent / 100.0f))
+                    {
+                        GameObject zombie = Instantiate(SpecialEnemy1.Prefab, transform.position + SpawnVariance, Quaternion.identity);
+                        zombie.GetComponent<ZombieController>().controller = SpawnControl;
+                        AttemptingSpawn = false;
+                        break;
+                    }
+                    RemainingPercent -= SpecialEnemy1.SpawnChance;
+                }
+
+                //Check Spawning chance for Special Enemy 2
+                if (SpecialEnemy2.Prefab != null && SpecialEnemy2.StartSpawningWave <= WaveCounter)
+                {
+                    if (Random.Range(0.0f, 100.0f) <= (SpecialEnemy2.SpawnChance * (RemainingPercent / 100.0f)))
+                    {
+                        GameObject zombie = Instantiate(SpecialEnemy2.Prefab, transform.position + SpawnVariance, Quaternion.identity);
+                        zombie.GetComponent<ZombieController>().controller = SpawnControl;
+                        AttemptingSpawn = false;
+                        break;
+                    }
+                    RemainingPercent -= SpecialEnemy2.SpawnChance;
+                }
+
+                //Check Spawning chance for Special Enemy 3
+                if (SpecialEnemy3.Prefab != null && SpecialEnemy3.StartSpawningWave <= WaveCounter)
+                {
+                    if (Random.Range(0.0f, 100.0f) <= (SpecialEnemy3.SpawnChance *(RemainingPercent / 100.0f)))
+                    {
+                        GameObject zombie = Instantiate(SpecialEnemy3.Prefab, transform.position + SpawnVariance, Quaternion.identity);
+                        zombie.GetComponent<ZombieController>().controller = SpawnControl;
+                        AttemptingSpawn = false;
+                        break;
+                    }
+                    RemainingPercent -= SpecialEnemy3.SpawnChance;
+                }
+
+                //Check Spawning chance for Big Enemy otherwise spawn Regular enemy
+                if (Random.Range(0.0f, 100.0f) <= 30.0f){
                         GameObject zombie = Instantiate(BigEnemyPrefab, transform.position + SpawnVariance, Quaternion.identity);
                         zombie.GetComponent<ZombieController>().controller = SpawnControl;
                     }

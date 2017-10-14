@@ -3,10 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
+public class SpecialEnemy {
+public GameObject Prefab;
+
+public float StartSpawningWave;
+
+[Range(0, 30)]
+public float SpawnChance;
+}
+
+
 public class EnemySpawnControl : MonoBehaviour {
 
     public List<EnemySpawner> AllSpawners= new List<EnemySpawner>();
     public float spawnTimer = 2.5f;
+
+    public GameObject enemyPrefab;
+
+    public GameObject BigEnemyPrefab;
+
+    public SpecialEnemy SpecialEnemy1;
+
+    public SpecialEnemy SpecialEnemy2;
+
+    public SpecialEnemy SpecialEnemy3;
+
 
     float textTimer = 2.5f;
 
@@ -25,6 +47,13 @@ public class EnemySpawnControl : MonoBehaviour {
 
     [SerializeField]
     EnvironmentManager StageManager;
+
+    private void Start()
+    {
+
+
+
+    }
 
     // Update is called once per frame
     void Update() {
@@ -50,9 +79,12 @@ public class EnemySpawnControl : MonoBehaviour {
             if(CurrentWave > 0)
             {
                 NumInWave = CurrentWave * 3 + 5;
-                GetComponentInChildren<EnemySpawner>().CanSpawnBigEnemies = true;
             }
             CurrentWave++;
+            //Update counter in all spawners
+            foreach (EnemySpawner Spawner in AllSpawners) {
+                Spawner.WaveCounter = CurrentWave;
+            }
             WaveText.gameObject.SetActive(true);
             WaveText.text = "Wave " + (CurrentWave).ToString();
             WaveDead = 0;
