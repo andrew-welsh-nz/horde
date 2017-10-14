@@ -65,6 +65,9 @@ public class shooting : MonoBehaviour {
     public GameObject BowRadialDisplay;
     public Material BowDisplayMaterial;
 
+    public GameObject ArrowCounter;
+    float ArrowAmount;
+
     //Arrow Line Stuff
     public GameObject ArrowLineL;
     public GameObject ArrowLineR;
@@ -102,6 +105,10 @@ public class shooting : MonoBehaviour {
 
 
         ArrowCountText.text = ArrowCount.ToString();
+
+        ArrowAmount = ArrowCount;
+
+        ArrowCounter.GetComponent<Image>().fillAmount = (ArrowAmount / 10);
 
         if (HasFirstEffectPlayed && !HasSecondEffectPlayed)
         {
@@ -142,6 +149,9 @@ public class shooting : MonoBehaviour {
                 anim.ResetTrigger("Shoot");
                 anim.SetTrigger("Release");
                 ArrowCount--;
+
+                //Arrow Counter Flash
+                ArrowCountFlash();
 
                 // Stop audio
                 arrowSounds.Stop();
@@ -313,5 +323,10 @@ public class shooting : MonoBehaviour {
         
         //Apply image alpha
         ScreenFade.GetComponent<Image>().color = ScreenDarkenCurrent;
+    }
+
+    public void ArrowCountFlash()
+    {
+        ArrowCounter.GetComponent<ArrowCounter>().ArrowCounterFlash();
     }
 }

@@ -67,6 +67,9 @@ public class ZombieController : MonoBehaviour {
             TargetObject.GetComponent<shooting>().ArrowCount += StuckArrows;
             StuckArrows = 0;
 
+            //Flash Arrow Counter
+            TargetObject.GetComponent<shooting>().ArrowCountFlash();
+
             //Play death animation
             anim.SetTrigger("death");
 
@@ -108,7 +111,7 @@ public class ZombieController : MonoBehaviour {
                 anim.SetTrigger("attack");
                 if (TargetObject.GetComponent<shooting>().ArrowCount > 0){
                     TargetObject.GetComponent<shooting>().ArrowCount--;
-                    GameObject.Find("Player/ArrowBreak").GetComponent<Animator>().SetTrigger("break");
+                    //GameObject.Find("Player/ArrowBreak").GetComponent<Animator>().SetTrigger("break");
                 }
                 else
                 {
