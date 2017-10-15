@@ -5,12 +5,14 @@ using UnityEngine.UI;
 
 [System.Serializable]
 public class SpecialEnemy {
-public GameObject Prefab;
+    public GameObject Prefab;
 
-public float StartSpawningWave;
+    public float StartSpawningWave;
 
-[Range(0, 30)]
-public float SpawnChance;
+    [Range(0, 30)]
+    public float SpawnChance;
+
+    public float ScoreWorth = 50.0f;
 }
 
 
