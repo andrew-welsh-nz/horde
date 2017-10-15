@@ -85,6 +85,12 @@ public class shooting : MonoBehaviour {
     Vector3 ArrowLineStart;
     Vector3 ArrowLineEnd;
 
+    public Material PullIndicatorMaterial;
+    public GameObject PullIndicatorHolder;
+    public GameObject PullIndicator;
+    public GameObject PullIndicatorBacking;
+    float PullIndicatorAlpha = 0.0f;
+
     public int ArrowCount = 10;
 
     float ScreenDarkenTarget = 0;
@@ -258,6 +264,19 @@ public class shooting : MonoBehaviour {
             Quaternion newRotation = Quaternion.LookRotation(direction);
             GetComponent<Rigidbody>().MoveRotation(newRotation);
 
+            //Pull Indicator
+
+            PullIndicatorAlpha = (charge * 255);
+            PullIndicatorBacking.SetActive(true);
+            PullIndicatorBacking.GetComponent<Image>().fillAmount = direction.magnitude / aimRadius;
+            PullIndicator.GetComponent<Image>().fillAmount = charge;
+
+            //Apply Colour
+
+            Color32 PullIndicatorColour = PullIndicatorMaterial.GetColor("_Color");
+            PullIndicatorColour.a = (byte)(PullIndicatorAlpha);
+            PullIndicatorMaterial.SetColor("_Color", PullIndicatorColour);
+
             //Debug.Log("Charging");
 
             //if (timeCharging <= fullChargeTime)
@@ -299,10 +318,15 @@ public class shooting : MonoBehaviour {
 
             ArrowLineL.SetActive(false);
             ArrowLineR.SetActive(false);
+            PullIndicatorBacking.SetActive(false);
 
             Color32 BowDisplayColour = BowDisplayMaterial.GetColor("_Color");
             BowDisplayColour.a = (byte)(0);
             BowDisplayMaterial.SetColor("_Color", BowDisplayColour);
+
+            Color32 PullIndicatorColour = PullIndicatorMaterial.GetColor("_Color");
+            PullIndicatorColour.a = (byte)(0);
+            PullIndicatorMaterial.SetColor("_Color", PullIndicatorColour);
         }
 
         //Screen Darken Image Fade
