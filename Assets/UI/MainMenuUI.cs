@@ -30,7 +30,6 @@ public class MainMenuUI : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        //MenuAnimator.SetTrigger("OpenMenu");
         CurrentMenu = 0;
         intro = true;
 	}
@@ -49,6 +48,7 @@ public class MainMenuUI : MonoBehaviour {
                 }
                 else
                 {
+                    //Trigger animator to move UI around, make title glow
                     titleAlpha = 255;
                     titleAppeared = true;
 
@@ -58,8 +58,10 @@ public class MainMenuUI : MonoBehaviour {
 
             if (CurrentMenu == 0 && titleAppeared == true)
             {
+                //Trigger UI to fade in
                 fadeUI = true;
 
+                //Fade title back to normal
                 if (titleAlpha >= 150)
                 {
                     titleAlpha -= (1 * titleFadeOut);
@@ -71,20 +73,17 @@ public class MainMenuUI : MonoBehaviour {
                 }
             }
 
+            //Fade UI
             if (fadeUI == true)
             {
                 if (UIAlpha <= 255)
                 {
                     UIAlpha += 1;
-
-                    Debug.Log("UI working");
                 }
                 else
                 {
                     UIAlpha = 255;
                     fadeUI = false;
-
-                    Debug.Log("UI Donezo.");
                 }
             }
 
