@@ -38,7 +38,6 @@ public class MainMenuUI : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        //Play Intro
         if (intro == true)
         {
             if (CurrentMenu == 0 && titleAppeared == false)
@@ -50,7 +49,6 @@ public class MainMenuUI : MonoBehaviour {
                 }
                 else
                 {
-                    //Once reached time, make title glow then start the fade
                     titleAlpha = 255;
                     titleAppeared = true;
 
@@ -60,7 +58,6 @@ public class MainMenuUI : MonoBehaviour {
 
             if (CurrentMenu == 0 && titleAppeared == true)
             {
-                //Fade the title back to normal and fade the UI in
                 fadeUI = true;
 
                 if (titleAlpha >= 150)
@@ -74,21 +71,25 @@ public class MainMenuUI : MonoBehaviour {
                 }
             }
 
-            //Fade ui in
             if (fadeUI == true)
             {
                 if (UIAlpha <= 255)
                 {
                     UIAlpha += 1;
+
+                    Debug.Log("UI working");
                 }
                 else
                 {
                     UIAlpha = 255;
                     fadeUI = false;
+
+                    Debug.Log("UI Donezo.");
                 }
             }
 
-            //Set materials
+
+
             Color32 TitleColour = MAT_Title.color;
             TitleColour.a = (byte)titleAlpha;
             MAT_Title.SetColor("_Color", TitleColour);
