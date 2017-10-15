@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class shooting : MonoBehaviour {
 
+    [SerializeField]
+    float chargeSpeed = 0.5f;
+
     float timeCharging = 0.0f;
     [SerializeField]
     float fullChargeTime;
@@ -174,7 +177,15 @@ public class shooting : MonoBehaviour {
 
         if (isCharging)
         {
-            charge = direction.magnitude / aimRadius;
+            if(charge < direction.magnitude / aimRadius)
+            {
+                charge += chargeSpeed;
+            }
+            else
+            {
+                charge = direction.magnitude / aimRadius;
+            }
+            //charge = direction.magnitude / aimRadius;
 
             if (charge > 1.0f)
             {
