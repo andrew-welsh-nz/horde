@@ -61,6 +61,9 @@ public class shooting : MonoBehaviour {
     [SerializeField]
     float touchAreaBuffer;
 
+    [SerializeField]
+    AudioSource dangerMusic;
+
     public Vector3 direction;
     public Vector3 hitPoint;
 
@@ -112,6 +115,23 @@ public class shooting : MonoBehaviour {
             PointLight.range = 20 + 4 * ArrowCount;
         }
 
+        if(ArrowCount < 5 && dangerMusic.volume < 0.2f)
+        {
+            dangerMusic.volume += 0.005f;
+        }
+        else if(ArrowCount < 5 && dangerMusic.volume > 0.2f)
+        {
+            dangerMusic.volume = 0.2f;
+        }
+
+        if(ArrowCount > 4 && dangerMusic.volume > 0.0f)
+        {
+            dangerMusic.volume -= 0.02f;
+        }
+        else if(ArrowCount > 4 && dangerMusic.volume < 0.0f)
+        {
+            dangerMusic.volume = 0.0f;
+        }
 
         ArrowCountText.text = ArrowCount.ToString();
 
