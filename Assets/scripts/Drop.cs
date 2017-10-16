@@ -12,6 +12,7 @@ public class Drop : MonoBehaviour {
     public GameObject MoreArrows;
 
     public int DropType = 0;
+    public float DropAlpha = 255;
 
     public float lifetime = 15;
     float life = 100;
@@ -20,7 +21,8 @@ public class Drop : MonoBehaviour {
 	void Start () {
         life = lifetime;
 
-        DropType = Random.Range(0, 4);
+        //DropType = Random.Range(0, 4);
+        DropType = 3;
 
         switch (DropType)
         {
@@ -66,5 +68,9 @@ public class Drop : MonoBehaviour {
         {
             GameObject.Destroy(gameObject);
         }
+
+        Color32 DropColour = DropMaterial.GetColor("_Color");
+        DropColour.a = (byte)(DropAlpha);
+        DropMaterial.SetColor("_Color", DropColour);
     }
 }

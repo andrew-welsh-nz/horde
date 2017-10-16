@@ -16,6 +16,9 @@ public class GameStart : MonoBehaviour {
     [SerializeField]
     GameObject ArrowCounterUI;
 
+    [SerializeField]
+    GameObject ArrowCounter;
+
     void OnTriggerEnter(Collider other){
         if (other.gameObject.tag == "Arrow") {
             //Start Game
@@ -27,6 +30,7 @@ public class GameStart : MonoBehaviour {
             //Makes game UI appear
             ArrowBreakUI.SetActive(true);
             ArrowCounterUI.SetActive(true);
+            ArrowCounter.SetActive(true);
 
             Destroy(other.gameObject);
             Destroy(this.gameObject);

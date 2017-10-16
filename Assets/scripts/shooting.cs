@@ -88,6 +88,7 @@ public class shooting : MonoBehaviour {
     Vector3 ArrowLineStart;
     Vector3 ArrowLineEnd;
 
+    public GameObject ArrowLineGroup;
     public Material PullIndicatorMaterial;
     public GameObject PullIndicatorHolder;
     public GameObject PullIndicator;
@@ -105,6 +106,7 @@ public class shooting : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         arrowSounds = GetComponent<AudioSource>();
+        ArrowLineGroup.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -207,6 +209,8 @@ public class shooting : MonoBehaviour {
 
             if (isCharging)
             {
+                ArrowLineGroup.SetActive(true);
+
                 if (charge < direction.magnitude / aimRadius)
                 {
                     charge += chargeSpeed;
@@ -393,5 +397,7 @@ public class shooting : MonoBehaviour {
     public void StartGame()
     {
         hasBegun = true;
+
+
     }
 }
