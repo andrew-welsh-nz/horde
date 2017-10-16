@@ -9,6 +9,7 @@ public class Drop : MonoBehaviour {
     public GameObject ExpArrow;
     public GameObject InstaKill;
     public GameObject Nuke;
+    public GameObject MoreArrows;
 
     public int DropType = 0;
 
@@ -19,7 +20,7 @@ public class Drop : MonoBehaviour {
 	void Start () {
         life = lifetime;
 
-        DropType = Random.Range(0, 3);
+        DropType = Random.Range(0, 4);
 
         switch (DropType)
         {
@@ -28,16 +29,27 @@ public class Drop : MonoBehaviour {
 
                 InstaKill.SetActive(false);
                 Nuke.SetActive(false);
+                MoreArrows.SetActive(false);
                 break;
             case 1:
                 InstaKill.SetActive(true);
 
                 ExpArrow.SetActive(false);
                 Nuke.SetActive(false);
+                MoreArrows.SetActive(false);
                 break;
             case 2:
                 Nuke.SetActive(true);
 
+                ExpArrow.SetActive(false);
+                InstaKill.SetActive(false);
+                MoreArrows.SetActive(false);
+                break;
+
+            case 3:
+                MoreArrows.SetActive(true);
+
+                Nuke.SetActive(false);
                 ExpArrow.SetActive(false);
                 InstaKill.SetActive(false);
                 break;
