@@ -29,10 +29,7 @@ public class MainMenuUI : MonoBehaviour {
     public float sfx = 0;
 
     [SerializeField]
-    shooting game;
-
-    [SerializeField]
-    ActiveOnPlay firstEnemy;
+    FirstDrop startDrop;
 
     // Use this for initialization
     void Start () {
@@ -112,8 +109,7 @@ public class MainMenuUI : MonoBehaviour {
 
     public void UI_Play()
     {
-        game.StartGame();
-        firstEnemy.StartGame();
+        startDrop.gameObject.SetActive(true);
         gameObject.SetActive(false);
         startGame = true;
     }

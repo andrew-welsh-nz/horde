@@ -97,8 +97,14 @@ public class Drop : MonoBehaviour {
             if(isStart)
             {
                 shooter.ArrowCount = 10;
-                GameObject.Destroy(gameObject);
+                GetComponent<FirstDrop>().StartGame();
             }
+            else if(DropType == 3)
+            {
+                shooter.ArrowCount += 3;
+            }
+
+            GameObject.Destroy(gameObject);
         }
     }
 }

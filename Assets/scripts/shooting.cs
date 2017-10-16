@@ -95,7 +95,7 @@ public class shooting : MonoBehaviour {
     public GameObject PullIndicatorBacking;
     float PullIndicatorAlpha = 0.0f;
 
-    public int ArrowCount = 0;
+    public int ArrowCount = 10;
 
     float ScreenDarkenTarget = 0;
 
@@ -397,7 +397,5 @@ public class shooting : MonoBehaviour {
     public void StartGame()
     {
         hasBegun = true;
-
-
     }
 }
