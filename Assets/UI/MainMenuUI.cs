@@ -28,6 +28,12 @@ public class MainMenuUI : MonoBehaviour {
     public float music = 0;
     public float sfx = 0;
 
+    [SerializeField]
+    shooting game;
+
+    [SerializeField]
+    ActiveOnPlay firstEnemy;
+
     // Use this for initialization
     void Start () {
         CurrentMenu = 0;
@@ -106,6 +112,8 @@ public class MainMenuUI : MonoBehaviour {
 
     public void UI_Play()
     {
+        game.StartGame();
+        firstEnemy.StartGame();
         gameObject.SetActive(false);
         startGame = true;
     }
