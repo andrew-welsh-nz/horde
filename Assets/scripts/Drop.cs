@@ -89,7 +89,7 @@ public class Drop : MonoBehaviour {
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit floorhit;
 
-        if (Physics.Raycast(camRay, out floorhit, camRayLength, dropMask))
+        if (Physics.Raycast(camRay, out floorhit, camRayLength, dropMask) && Input.GetMouseButtonDown(0))
         {
             //Debug.Log("Drop tapped!");
             //Debug.Log(direction.magnitude);
