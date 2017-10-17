@@ -44,6 +44,8 @@ public class ZombieController : MonoBehaviour {
     [SerializeField]
     Drop dropPrefab;
 
+    AudioSource sound;
+
     // Use this for initialization
     void Start () {
         if (TargetObject == null) {
@@ -55,6 +57,8 @@ public class ZombieController : MonoBehaviour {
         
         //Get zombie's animator
         anim = gameObject.transform.GetChild(0).GetComponent<Animator>();
+
+        sound = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -184,6 +188,8 @@ public class ZombieController : MonoBehaviour {
 
         if(collision.gameObject.tag == "Arrow")
         {
+            sound.Play();
+
             lastArrow = gameObject.transform.forward;
 
             // Remove the charge of the arrow from the health of the zombie
