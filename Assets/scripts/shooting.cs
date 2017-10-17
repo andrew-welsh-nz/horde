@@ -180,30 +180,38 @@ public class shooting : MonoBehaviour {
                     HasSecondEffectPlayed = false;
                     HasFirstEffectPlayed = false;
 
-                    // Release arrow
-                    anim.ResetTrigger("Shoot");
-                    anim.SetTrigger("Release");
-                    ArrowCount--;
-
-                    //Arrow Counter Flash
-                    ArrowCountFlash();
-
                     // Stop audio
                     arrowSounds.Stop();
-                    arrowSounds.clip = releaseSound;
-                    arrowSounds.loop = false;
-                    arrowSounds.Play();
+                    anim.ResetTrigger("Shoot");
 
-                    // Spawn an arrow at the arrow position
-                    Arrow newArrow = Instantiate(arrowPrefab);
-                    //   Debug.Log(direction.magnitude);
-                    newArrow.charge = charge;
-                    newArrow.transform.position = arrowSpawn.transform.position;
-                    newArrow.transform.rotation = arrowSpawn.transform.rotation;
+                    if (charge > 20)
+                    {
+                        arrowSounds.clip = releaseSound;
+                        arrowSounds.loop = false;
+                        arrowSounds.Play();
 
-                    // Reset charge
-                    //charge = 0.0f;
-                    //PowerSlider.value = charge;
+                        // Release arrow
+                        anim.SetTrigger("Release");
+                        ArrowCount--;
+
+                        //Arrow Counter Flash
+                        ArrowCountFlash();
+
+                        // Spawn an arrow at the arrow position
+                        Arrow newArrow = Instantiate(arrowPrefab);
+                        //   Debug.Log(direction.magnitude);
+                        newArrow.charge = charge;
+                        newArrow.transform.position = arrowSpawn.transform.position;
+                        newArrow.transform.rotation = arrowSpawn.transform.rotation;
+
+                        // Reset charge
+                        //charge = 0.0f;
+                        //PowerSlider.value = charge;
+                    }
+                    else
+                    {
+                        // RETURN THE PLAYER TO THE IDLE ANIMATION, AS THEY DID NOT CHARGE ENOUGH TO SHOOT AN ARROW
+                    }
                 }
             }
 
