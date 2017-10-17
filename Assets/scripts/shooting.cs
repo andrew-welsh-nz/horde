@@ -53,7 +53,7 @@ public class shooting : MonoBehaviour {
     AudioClip releaseSound;
 
     [SerializeField]
-    Light PointLight;
+    EnvironmentManager environmentManager;
 
     [SerializeField]
     GameObject ScreenFade;
@@ -120,7 +120,10 @@ public class shooting : MonoBehaviour {
 
             if (ArrowCount < 10)
             {
-                PointLight.range = 20 + 4 * ArrowCount;
+                foreach (Light light in environmentManager.PointLights) {
+                    light.range = 20 + 4 * ArrowCount;
+                }
+              //  PointLight.range = 20 + 4 * ArrowCount;
             }
 
             if (ArrowCount < 5 && dangerMusic.volume < 0.2f)

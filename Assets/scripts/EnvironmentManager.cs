@@ -17,7 +17,15 @@ public class EnvironmentManager : MonoBehaviour {
     Theme[] themes;
 
     [SerializeField]
+    GameObject[] Lights;
+
+    public Light[] PointLights;
+
+    [SerializeField]
     float movespeed = 0.5f;
+
+    [SerializeField]
+    float LightTransitionSpeed = 0.5f;
 
     [SerializeField]
     int currentTheme = 0;
@@ -37,12 +45,14 @@ public class EnvironmentManager : MonoBehaviour {
 	void Update () {
 
         themes[currentTheme].gameObject.SetActive(true);
+        Lights[currentTheme].gameObject.SetActive(true);
 
         int NavMeshCounter = 0;
         for (int i = 0; i < themes.Length; i++)
         {
             if (i == currentTheme)
             {
+                //Theme Objects
                 if(themes[i].transform.position.y <= currentTarget.position.y)
                 {
                     themes[i].transform.position = new Vector3(0.0f, themes[i].transform.position.y + movespeed * Time.deltaTime, 0.0f);
@@ -52,9 +62,30 @@ public class EnvironmentManager : MonoBehaviour {
                     themes[i].transform.position = currentTarget.position;
 
                 }
+
+                //Lights
+                if (Lights[i].gameObject.GetComponentInChildren<Light>().intensity < 3)
+                {
+                    Light[] allLights = Lights[i].gameObject.GetComponentsInChildren<Light>();
+                    foreach (Light light in allLights) {
+                        light.gameObject.GetComponentInChildren<Light>().intensity += LightTransitionSpeed * Time.deltaTime;
+                    }
+                    
+                   
+                }
+                else {
+                    Light[] allLights = Lights[i].gameObject.GetComponentsInChildren<Light>();
+                    foreach (Light light in allLights)
+                    {
+                        light.gameObject.GetComponentInChildren<Light>().intensity = 3;
+                    }
+                }
+
+
             }
             else
             {
+                //Game Objects
                 if (themes[i].transform.position.y >= unusedTarget.position.y)
                 {
                     themes[i].transform.position = new Vector3(0.0f, themes[i].transform.position.y - movespeed * Time.deltaTime, 0.0f);
@@ -62,6 +93,25 @@ public class EnvironmentManager : MonoBehaviour {
                 else
                 {
                     themes[i].gameObject.SetActive(false);
+                }
+
+                //Lights
+                if (Lights[i].gameObject.GetComponentInChildren<Light>().intensity > 0)
+                {
+                    Light[] allLights = Lights[i].gameObject.GetComponentsInChildren<Light>();
+                    foreach (Light light in allLights)
+                    {
+                        light.gameObject.GetComponentInChildren<Light>().intensity -= LightTransitionSpeed * Time.deltaTime;
+                    }
+                }
+                else
+                {
+                    Light[] allLights = Lights[i].gameObject.GetComponentsInChildren<Light>();
+                    foreach (Light light in allLights)
+                    {
+                        light.gameObject.GetComponentInChildren<Light>().intensity = 0; 
+                    }
+                    Lights[i].SetActive(false);
                 }
             }
 
