@@ -26,9 +26,10 @@ public class EnvironmentManager : MonoBehaviour {
     LocalNavMeshBuilder NavMeshBuilder;
 
     private bool LayoutChangeComplete = false;
+    private bool UpdateNavMesh = false;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         themes[currentTheme].gameObject.SetActive(true);
 	}
 	
@@ -37,6 +38,7 @@ public class EnvironmentManager : MonoBehaviour {
 
         themes[currentTheme].gameObject.SetActive(true);
 
+        int NavMeshCounter = 0;
         for (int i = 0; i < themes.Length; i++)
         {
             if (i == currentTheme)
@@ -48,12 +50,6 @@ public class EnvironmentManager : MonoBehaviour {
                 else if(themes[i].transform.position.y != currentTarget.position.y)
                 {
                     themes[i].transform.position = currentTarget.position;
-
-                    if (LayoutChangeComplete == false) {
-                        LayoutChangeComplete = true;
-                        NavMeshBuilder.UpdateNewNavMesh = true;
-                        Debug.Log("Layout change complete");
-                    }
 
                 }
             }
@@ -68,7 +64,31 @@ public class EnvironmentManager : MonoBehaviour {
                     themes[i].gameObject.SetActive(false);
                 }
             }
+
+
+            if (i != currentTheme) {
+                if (themes[i].gameObject.activeSelf == false)
+                    NavMeshCounter++;
+            }
+
+
         }
+
+        //Checks if the layout has finished changing based on the amount of inactive themes (as they tend to deactivate last)
+        if (NavMeshCounter >= 2) {
+            if (LayoutChangeComplete == false)
+            {
+                LayoutChangeComplete = true;
+                UpdateNavMesh = true;
+            }
+        }
+
+        if (UpdateNavMesh == true) {
+            UpdateNavMesh = false;
+            NavMeshBuilder.UpdateNewNavMesh = true;
+            Debug.Log("Layout change complete");
+        }
+
 	}
 
     public void ChangeSet()
