@@ -39,9 +39,12 @@ public class EnvironmentManager : MonoBehaviour {
     private bool LayoutChangeComplete = false;
     private bool UpdateNavMesh = false;
 
+    AudioSource rumble;
+
     // Use this for initialization
     void Start () {
         themes[currentTheme].gameObject.SetActive(true);
+        rumble = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -139,6 +142,7 @@ public class EnvironmentManager : MonoBehaviour {
         if (UpdateNavMesh == true) {
             UpdateNavMesh = false;
             NavMeshBuilder.UpdateNewNavMesh = true;
+            rumble.Stop();
             Debug.Log("Layout change complete");
         }
 
@@ -154,6 +158,7 @@ public class EnvironmentManager : MonoBehaviour {
         }
         themes[currentTheme].GetNewActive();
         //currentTheme = 1;
+        rumble.Play();
         MainCamera.enabled = true;
         LayoutChangeComplete = false;
     }
