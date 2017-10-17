@@ -10,14 +10,17 @@ public class EnvironmentManager : MonoBehaviour {
     [SerializeField]
     Transform currentTarget;
 
+    //[SerializeField]
+    //GameObject[] scenes;
+
     [SerializeField]
-    GameObject[] sets;
+    Theme[] themes;
 
     [SerializeField]
     float movespeed = 0.5f;
 
     [SerializeField]
-    int currentSet = 0;
+    int currentTheme = 0;
 
     [SerializeField]
     LocalNavMeshBuilder NavMeshBuilder;
@@ -26,25 +29,25 @@ public class EnvironmentManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        sets[currentSet].SetActive(true);
+        themes[currentTheme].gameObject.SetActive(true);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        sets[currentSet].SetActive(true);
+        themes[currentTheme].gameObject.SetActive(true);
 
-        for (int i = 0; i < sets.Length; i++)
+        for (int i = 0; i < themes.Length; i++)
         {
-            if (i == currentSet)
+            if (i == currentTheme)
             {
-                if(sets[i].transform.position.y <= currentTarget.position.y)
+                if(themes[i].transform.position.y <= currentTarget.position.y)
                 {
-                    sets[i].transform.position = new Vector3(0.0f, sets[i].transform.position.y + movespeed * Time.deltaTime, 0.0f);
+                    themes[i].transform.position = new Vector3(0.0f, themes[i].transform.position.y + movespeed * Time.deltaTime, 0.0f);
                 }
-                else if(sets[i].transform.position.y != currentTarget.position.y)
+                else if(themes[i].transform.position.y != currentTarget.position.y)
                 {
-                    sets[i].transform.position = currentTarget.position;
+                    themes[i].transform.position = currentTarget.position;
 
                     if (LayoutChangeComplete == false) {
                         LayoutChangeComplete = true;
@@ -56,13 +59,13 @@ public class EnvironmentManager : MonoBehaviour {
             }
             else
             {
-                if (sets[i].transform.position.y >= unusedTarget.position.y)
+                if (themes[i].transform.position.y >= unusedTarget.position.y)
                 {
-                    sets[i].transform.position = new Vector3(0.0f, sets[i].transform.position.y - movespeed * Time.deltaTime, 0.0f);
+                    themes[i].transform.position = new Vector3(0.0f, themes[i].transform.position.y - movespeed * Time.deltaTime, 0.0f);
                 }
                 else
                 {
-                    sets[i].SetActive(false);
+                    themes[i].gameObject.SetActive(false);
                 }
             }
         }
@@ -71,8 +74,13 @@ public class EnvironmentManager : MonoBehaviour {
     public void ChangeSet()
     {
         Debug.Log("Changing Sets");
-        //currentSet = Random.Range(0, sets.Length);
-        currentSet = 1;
+        int oldTheme = currentTheme;
+        while(currentTheme == oldTheme)
+        {
+            currentTheme = Random.Range(0, themes.Length);
+        }
+        themes[currentTheme].GetNewActive();
+        //currentTheme = 1;
         LayoutChangeComplete = false;
     }
 }
