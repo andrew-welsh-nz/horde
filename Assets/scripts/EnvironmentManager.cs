@@ -33,6 +33,9 @@ public class EnvironmentManager : MonoBehaviour {
     [SerializeField]
     LocalNavMeshBuilder NavMeshBuilder;
 
+    [SerializeField]
+    CameraShake MainCamera;
+
     private bool LayoutChangeComplete = false;
     private bool UpdateNavMesh = false;
 
@@ -151,6 +154,7 @@ public class EnvironmentManager : MonoBehaviour {
         }
         themes[currentTheme].GetNewActive();
         //currentTheme = 1;
+        MainCamera.enabled = true;
         LayoutChangeComplete = false;
     }
 }
