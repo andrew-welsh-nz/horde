@@ -116,11 +116,13 @@ public class ZombieController : MonoBehaviour {
                 if (TargetObject.GetComponent<shooting>().ArrowCount > 0){
                     TargetObject.GetComponent<shooting>().ArrowCount--;
                     //GameObject.Find("Player/ArrowBreak").GetComponent<Animator>().SetTrigger("break");
+                    TargetObject.GetComponent<shooting>().GetHit();
                 }
                 else
                 {
                     //Game Over
                     TargetObject.GetComponent<PlayerController>().StartCoroutine("GameOver");
+                    TargetObject.GetComponent<shooting>().Death();
                 }
 
             }

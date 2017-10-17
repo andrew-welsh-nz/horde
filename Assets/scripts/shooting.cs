@@ -101,6 +101,8 @@ public class shooting : MonoBehaviour {
 
     AudioSource arrowSounds;
 
+    bool dead = false;
+
     bool hasBegun = false;
 
 	// Use this for initialization
@@ -211,6 +213,8 @@ public class shooting : MonoBehaviour {
                     else
                     {
                         // RETURN THE PLAYER TO THE IDLE ANIMATION, AS THEY DID NOT CHARGE ENOUGH TO SHOOT AN ARROW
+
+                        anim.SetTrigger("Idle");
                     }
                 }
             }
@@ -405,5 +409,26 @@ public class shooting : MonoBehaviour {
     public void StartGame()
     {
         hasBegun = true;
+    }
+
+    public void Death()
+    {
+        if (dead == false)
+        {
+            anim.SetTrigger("Death");
+            dead = true;
+        }
+    }
+
+    public void GetHit()
+    {
+        if (Random.Range(0, 10) > 5)
+        {
+            anim.SetTrigger("GetHit");
+        }
+        else
+        {
+            anim.SetTrigger("GetHit2");
+        }
     }
 }
