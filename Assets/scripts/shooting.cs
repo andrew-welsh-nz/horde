@@ -323,7 +323,7 @@ public class shooting : MonoBehaviour {
 
                 //Pull Indicator
 
-                PullIndicatorAlpha = (charge * 255);
+                PullIndicatorAlpha =  255;
                 PullIndicatorBacking.SetActive(true);
                 PullIndicatorBacking.GetComponent<Image>().fillAmount = direction.magnitude / aimRadius;
                 PullIndicator.GetComponent<Image>().fillAmount = charge;
