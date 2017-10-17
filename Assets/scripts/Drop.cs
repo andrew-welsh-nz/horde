@@ -17,6 +17,8 @@ public class Drop : MonoBehaviour {
     public float DropAlpha = 255;
 
     public bool isStart = false;
+    [SerializeField]
+    GameObject arrowCountCanvas;
 
     public float lifetime = 15;
     float life = 100;
@@ -99,6 +101,7 @@ public class Drop : MonoBehaviour {
                 {
                     shooter.ArrowCount = 10;
                     GetComponent<FirstDrop>().StartGame();
+                    arrowCountCanvas.SetActive(true);
                 }
                 else if (DropType == 3)
                 {
