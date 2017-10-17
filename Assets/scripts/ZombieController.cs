@@ -34,8 +34,12 @@ public class ZombieController : MonoBehaviour {
     public float speed;
 
     //Arrow drop chance
-    public float ArrowChance = 0.1f;
+    [SerializeField]
+    float ArrowChance = 0.1f;
     bool GivenArrow = false;
+
+    [SerializeField]
+    Drop dropPrefab;
 
     // Use this for initialization
     void Start () {
@@ -149,12 +153,11 @@ public class ZombieController : MonoBehaviour {
 
             if (Random.value <= (ArrowChance))
             {
-                TargetObject.GetComponent<shooting>().ArrowCount += 1;
-               // Debug.Log("Arrow Drop!");
-            }
-            else
-            {
-                //Debug.Log("No Drop!");
+                Debug.Log("Dropping Pickup!");
+                Drop givenDrop = Instantiate<Drop>(dropPrefab);
+                givenDrop.shooter = TargetObject.GetComponent<shooting>();
+                givenDrop.isStart = false;
+                givenDrop.transform.position = new Vector3(this.transform.position.x, 0.2132511f, this.transform.position.z);
             }
         }
         

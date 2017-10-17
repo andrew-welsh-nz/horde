@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Drop : MonoBehaviour {
 
-    [SerializeField]
-    shooting shooter;
+    public shooting shooter;
 
     public Material DropMaterial;
 
@@ -89,22 +88,29 @@ public class Drop : MonoBehaviour {
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit floorhit;
 
-        if (Physics.Raycast(camRay, out floorhit, camRayLength, dropMask) && Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0))
         {
-            //Debug.Log("Drop tapped!");
-            //Debug.Log(direction.magnitude);
-
-            if(isStart)
+            if (Physics.Raycast(camRay, out floorhit, camRayLength, dropMask))
             {
-                shooter.ArrowCount = 10;
-                GetComponent<FirstDrop>().StartGame();
-            }
-            else if(DropType == 3)
-            {
-                shooter.ArrowCount += 3;
-            }
+                Debug.Log("Drop tapped!");
+                //Debug.Log(direction.magnitude);
 
-            GameObject.Destroy(gameObject);
-        }
+                if (isStart)
+                {
+                    shooter.ArrowCount = 10;
+                    GetComponent<FirstDrop>().StartGame();
+                }
+                else if (DropType == 3)
+                {
+                    shooter.ArrowCount += 3;
+                    if (shooter.ArrowCount > 10)
+                    {
+                        shooter.ArrowCount = 10;
+                    }
+                }
+
+                GameObject.Destroy(gameObject);
+            }
+        }        
     }
 }
