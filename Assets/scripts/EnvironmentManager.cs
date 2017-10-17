@@ -36,6 +36,9 @@ public class EnvironmentManager : MonoBehaviour {
     [SerializeField]
     CameraShake MainCamera;
 
+    [SerializeField]
+    EnemySpawnControl spawnController;
+
     private bool LayoutChangeComplete = false;
     private bool UpdateNavMesh = false;
 
@@ -143,6 +146,7 @@ public class EnvironmentManager : MonoBehaviour {
             UpdateNavMesh = false;
             NavMeshBuilder.UpdateNewNavMesh = true;
             rumble.Stop();
+            spawnController.isSpawning = true;
             Debug.Log("Layout change complete");
         }
 
