@@ -109,6 +109,7 @@ public class shooting : MonoBehaviour {
 	void Start () {
         arrowSounds = GetComponent<AudioSource>();
         ArrowLineGroup.SetActive(false);
+        anim.SetTrigger("Alive");
     }
 	
 	// Update is called once per frame
