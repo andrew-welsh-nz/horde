@@ -163,9 +163,9 @@ public class shooting : MonoBehaviour {
                     isCharging = true;
                     //HasSecondEffectPlayed = false;
                     anim.SetTrigger("Shoot");
-                    arrowSounds.clip = chargeSound;
-                    arrowSounds.loop = false;
-                    arrowSounds.Play();
+                    //arrowSounds.clip = chargeSound;
+                    //arrowSounds.loop = false;
+                    //arrowSounds.Play();
                 }
             }
 
@@ -242,6 +242,19 @@ public class shooting : MonoBehaviour {
                 }
 
                 anim.Play("Shooting", 0, charge);
+
+                if(arrowSounds.clip != holdSound)
+                {
+                    arrowSounds.clip = holdSound;
+                    arrowSounds.loop = true;
+                }
+
+                if(!arrowSounds.isPlaying)
+                {
+                    arrowSounds.Play();
+                }
+
+                arrowSounds.volume = charge;
 
                 //Arrow Display
 
