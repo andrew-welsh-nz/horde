@@ -33,6 +33,9 @@ public class ZombieController : MonoBehaviour {
 
     public float speed;
 
+    [SerializeField]
+    bool returnArrow = false;
+
     //Arrow drop chance
     [SerializeField]
     float ArrowChance = 0.1f;
@@ -152,6 +155,11 @@ public class ZombieController : MonoBehaviour {
         if (GivenArrow == false)
         {
             GivenArrow = true;
+
+            if(returnArrow && TargetObject.GetComponent<shooting>().ArrowCount < 10)
+            {
+                TargetObject.GetComponent<shooting>().ArrowCount++;
+            }
 
             if (Random.value <= (ArrowChance))
             {
