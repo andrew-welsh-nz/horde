@@ -64,6 +64,7 @@ public class MainMenuUI : MonoBehaviour {
                 //Trigger UI to fade in
                 fadeUI = true;
 
+                /*
                 //Fade title back to normal
                 if (titleAlpha >= 150)
                 {
@@ -74,6 +75,7 @@ public class MainMenuUI : MonoBehaviour {
                     titleAlpha = 150;
                     intro = false;
                 }
+                */
             }
 
             //Fade UI
@@ -87,6 +89,7 @@ public class MainMenuUI : MonoBehaviour {
                 {
                     UIAlpha = 255;
                     fadeUI = false;
+                    intro = false;
                 }
             }
 
