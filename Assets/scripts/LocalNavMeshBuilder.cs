@@ -8,6 +8,9 @@ using NavMeshBuilder = UnityEngine.AI.NavMeshBuilder;
 [DefaultExecutionOrder(-102)]
 public class LocalNavMeshBuilder : MonoBehaviour
 {
+
+    public bool UpdateNewNavMesh = true;
+
     // The center of the build
     public Transform m_Tracked;
 
@@ -46,14 +49,19 @@ public class LocalNavMeshBuilder : MonoBehaviour
 
     void UpdateNavMesh(bool asyncUpdate = false)
     {
-        NavMeshSourceTag.Collect(ref m_Sources);
-        var defaultBuildSettings = NavMesh.GetSettingsByID(0);
-        var bounds = QuantizedBounds();
+        if (UpdateNewNavMesh)
+        {
+            NavMeshSourceTag.Collect(ref m_Sources);
+            var defaultBuildSettings = NavMesh.GetSettingsByID(0);
+            var bounds = QuantizedBounds();
 
-        if (asyncUpdate)
-            m_Operation = NavMeshBuilder.UpdateNavMeshDataAsync(m_NavMesh, defaultBuildSettings, m_Sources, bounds);
-        else
-            NavMeshBuilder.UpdateNavMeshData(m_NavMesh, defaultBuildSettings, m_Sources, bounds);
+            if (asyncUpdate)
+                m_Operation = NavMeshBuilder.UpdateNavMeshDataAsync(m_NavMesh, defaultBuildSettings, m_Sources, bounds);
+            else
+                NavMeshBuilder.UpdateNavMeshData(m_NavMesh, defaultBuildSettings, m_Sources, bounds);
+
+            UpdateNewNavMesh = false;
+        }
     }
 
     static Vector3 Quantize(Vector3 v, Vector3 quant)

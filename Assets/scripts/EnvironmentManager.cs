@@ -19,6 +19,11 @@ public class EnvironmentManager : MonoBehaviour {
     [SerializeField]
     int currentSet = 0;
 
+    [SerializeField]
+    LocalNavMeshBuilder NavMeshBuilder;
+
+    private bool LayoutChangeComplete = false;
+
 	// Use this for initialization
 	void Start () {
         sets[currentSet].SetActive(true);
@@ -40,6 +45,13 @@ public class EnvironmentManager : MonoBehaviour {
                 else if(sets[i].transform.position.y != currentTarget.position.y)
                 {
                     sets[i].transform.position = currentTarget.position;
+
+                    if (LayoutChangeComplete == false) {
+                        LayoutChangeComplete = true;
+                        NavMeshBuilder.UpdateNewNavMesh = true;
+                        Debug.Log("Layout change complete");
+                    }
+
                 }
             }
             else
@@ -61,5 +73,6 @@ public class EnvironmentManager : MonoBehaviour {
         Debug.Log("Changing Sets");
         //currentSet = Random.Range(0, sets.Length);
         currentSet = 1;
+        LayoutChangeComplete = false;
     }
 }

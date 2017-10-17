@@ -28,17 +28,17 @@ public class NavMeshSourceTag : MonoBehaviour
 
     void OnDisable()
     {
-        var m = GetComponent<MeshFilter>();
-        if (m != null)
-        {
-            m_Meshes.Remove(m);
-        }
+        //var m = GetComponent<MeshFilter>();
+        //if (m != null)
+        //{
+        //    m_Meshes.Remove(m);
+        //}
 
-        var t = GetComponent<Terrain>();
-        if (t != null)
-        {
-            m_Terrains.Remove(t);
-        }
+        //var t = GetComponent<Terrain>();
+        //if (t != null)
+        //{
+        //    m_Terrains.Remove(t);
+        //}
     }
 
     // Collect all the navmesh build sources for enabled objects tagged by this component
