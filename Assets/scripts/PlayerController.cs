@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 public class PlayerController : MonoBehaviour {
 
@@ -23,6 +24,9 @@ public class PlayerController : MonoBehaviour {
 
     [SerializeField]
     GameObject ScoreText;
+
+    [SerializeField]
+    GameObject HighScoreText;
 
     shooting Shooting;
 
@@ -70,13 +74,42 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    void CheckNewHighScore(int Score) {
+        //Get High Scores
+        StreamReader reader = new StreamReader("Assets/Text/HighScores.txt");
+        string HighScore = reader.ReadLine();
+        reader.Close();
+        int CurrentHightScore =  int.Parse(HighScore);
+
+        //Check if it's a high score
+        if (CurrentHightScore < Score) {
+            CurrentHightScore = Score;
+
+            StreamWriter writer = new StreamWriter("Assets/Text/HighScores.txt", false);
+            writer.WriteLine(CurrentHightScore.ToString());
+            writer.Close();
+        }
+    }
+
+    void DisplayHighScores() {
+        //Get High Scores
+        StreamReader reader = new StreamReader("Assets/Text/HighScores.txt");
+        string HighScore = reader.ReadLine();
+        reader.Close();
+        int CurrentHightScore = int.Parse(HighScore);
+        HighScoreText.GetComponent<Text>().text = "HighScore: " + CurrentHightScore.ToString();
+    }
+
     public IEnumerator GameOver() {
         if (!GameOverHasBeenCalled)
         {
             GameOverHasBeenCalled = true;
             ScoreText.GetComponent<Text>().text = "Score: " + DisplayScore.ToString();
+            CheckNewHighScore(DisplayScore);
+            DisplayHighScores();
             GameOverText.SetActive(true);
             ScoreText.SetActive(true);
+            HighScoreText.SetActive(true);
             yield return new WaitForSeconds(5.0f);
             SceneManager.LoadScene("main");
         }
